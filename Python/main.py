@@ -1,4 +1,4 @@
-# Lesson3: String & concatenation
+print("\nLesson3: String & concatenation\n")
 
 # Escape sequence eg \', \", \n, \t, \v, \\, \b, \r
 
@@ -15,7 +15,7 @@ attr = "pecker"
 bird = group + attr
 print(bird)
 
-# Lesson 4: Basic Arithmetic Operators
+print("\nLesson 4: Basic Arithmetic Operators\n")
 print('Arithmetic operators\n') # They are + - / * ** // %
 result = 4 + 6
 print(result)
@@ -62,7 +62,7 @@ result = 4
 result //= 3
 print(result)
 
-# Lesson 5: Conditional and Relational operators
+print("\nLesson 5: Conditional and Relational operators\n")
 # Conditional operators: if, if else and elif
 # Relational operators are also known as comparison operators: <, >, <=, >=, ==, !=
 print("if statement\n")
@@ -91,10 +91,10 @@ elif age != 12:
 else:
     print("You are not too young")
 
-# lesson 6: Conditional and logical operators
+print("\nlesson 6: Conditional and logical operators\n")
 print("\nLogical operators are \n: and , or, not")
 
-# lesson 7: Loops( For and while loops)
+print("\nlesson 7: Loops( For and while loops)\n")
 
 print('\nFor loop')
 # iterate sequence
@@ -195,3 +195,380 @@ while number > 0:
     number -= 1
 else:
     print("end of loop")
+
+
+print("\nLesson 9: Functions\n")
+# Functions are reuseable block of code that can be called (invoked) at any point in the program
+# There are 3 types of functions in python: Built-in, User define functions (UDF), Anonymous function
+# Built in functions: These are functions that come predefined with python library. Eg print, len, min, max
+# UDF: functions created by users to perform a particular logic in the program and are denoted using 'def' keyword
+# Anonymous: These are user define functions that are not declared using the def keyword & dont have a name. They are AKA lambda
+# structure of function is: def <function keyword> (<parameters>)
+# python does not allow for empty functions (with no code or logic under). Instead ypu can use 'pass' as code block
+
+def name():
+    print("I am Udy")
+
+def greeting():
+    print("Hello! Good morning")
+
+def goodbye():
+    print("Thank you")
+    print("Goodbye")
+
+name()
+greeting()
+goodbye()
+
+# Empty functions are not allowed in python except pass is used in place of the logic(code block)
+
+def login_test():
+    pass
+
+login_test()
+
+
+print("\nLesson 9: Anonymous functions\n")
+# Also called lambda, its used when a) function has short lifespan, b)function has 1 expression c)function is to be passed into another function
+# structure of anonymous function is lambda: code block
+
+greet = lambda: print("Hello World Anonymous")
+def accept(cb):
+    cb("Hello")
+
+
+greet()   # use b) function has 1 expression
+accept(lambda x: "Hello All")   # use c) function inside a function
+
+
+print("\nLesson 11: Functions- Argument & return statements\n")
+# parameters = the variables defined within the () of a function
+# argument = the values passed into the function
+# 5 types of arguments in python are: required, default, keyword, arbitrary, arbitrary keyword
+print("\n Required Argument\n")  # the order of the arguments and parameter matter
+def add(num1,num2):
+    print(num1+num2)
+
+add(2,5)
+
+# example 2
+def greet(name):
+    print("Hello", name)
+
+greet("Bolu")
+
+print("\n Default Argument\n")  # the order of the arguments and parameter matter
+def add(num1,num2=3):
+    print(num1+num2)
+
+add(2) # if only 1 value (argument) is passed, the function will use 3 for num2 as the default second value
+
+# example2  # multiple applications for default argument
+def add(num1=67,num2=13):
+    result = num1+num2
+    print(result)
+
+add()
+add(7)
+add(3,3)
+
+print("\n Arbitrary/variadic Argument\n") # used to denote what value belongs to which parameter and does not matter the order
+def add(num1,num2):
+    print(num1+num2)
+
+def minus(num1,num2):
+    result = num1 - num2
+    print(result)
+
+
+add(num1=4,num2=5)
+add(num2=5,num1=4)
+minus(num1=10, num2 = 7)
+minus(num2=1, num1 = 3)
+
+def print_value(*args):
+    print("Args:", args)
+
+print_value(1, 7, 9)
+
+print("\n Arbitrary Keyword Argument\n")  # used when you do not know the number of arguments to be passed in the function
+# it is preceeded with **
+def add(** kwargs):
+    print(kwargs['num1']+kwargs['num2']+kwargs['num3']+kwargs['num4'])
+
+add(num1=4,num2=9,num3=4,num4=10)
+
+
+print("\n Return Statements\n")
+def add_and_return(num1,num2):
+    result = num1 + num2
+    return result
+
+res = add_and_return(50,50)
+print("50:50", res)
+
+def check_number(number):
+    if number > 5:
+        return
+    print("Number:", number)
+
+
+check_number(1)
+check_number(2)
+check_number(3)
+check_number(6)
+
+
+print("\nLesson 12: Global & local variables\n")
+# Global variables can be accessed at any part of the code while local variables are accessible only within the function they are called
+name = "Testify"  #Global variable
+
+def hello():
+    language = "Python"  #local variable
+    print("Global variable:", name, "Local variable:",language)
+
+def greet():
+    framework = "Selenium"  #local variable
+    print("Global variable:", name,"Local variable:",framework)
+
+print(name) #Global
+# print(language) # cant be called since they are variables within a function
+# print(framework) # cant be called since they are variables within a function
+hello()
+greet()
+
+# variable shadowing: This is the masking of an outer variable by the inner variable.
+# This is done when the inner variable bears the same name as that of the outer variable
+
+platform = "Web"            #global variable
+
+def name():
+    platform = "mobile"             # this variable is shadowing the global variable of value web
+    print("Platform:", platform)
+
+name()
+
+print("\n Lesson 13: Function & loops: Recursion\n")
+# Recursion is a feature in python where a function can call itself.
+# It can be used just like 'for' & 'while' loops but dont guaranty the same optimal behaviour
+
+def reduce_number_loop(num):
+    while num >= 0:
+        print(num)
+        num -= 1
+
+print("\nRecursionError\n")
+# This error occurs when function calls itself repeatedly for the maximum number of depth configured in python
+#def print_hello():
+#    print("Hello World")
+#    print_hello()
+
+#print_hello()
+
+
+#def reduce_number_recurssion(num):
+#    print(num)
+#    if number == 0:
+#        return
+#    reduce_number_recurssion(num-1)
+
+reduce_number_loop(5)
+print()
+#reduce_number_recurssion(5)
+
+print("\n Lesson 14: Basic String Operation\n")
+# some string operations are: len(), upper(), lower(), capitalize(), count(), find()
+# index(), strip(), rstrip(), lstrip(), split(), format()
+name = "testify is the name of a software testing training company that trains testers"
+name2 = "   testify is    the name of a software testing training company that   trains testers  "
+
+# size of the string
+size = len(name)
+print(size)
+
+# upper case
+upper_case = name.upper()
+print(upper_case)
+# lower case
+lower_case = name.lower()
+print(lower_case)
+# capitalized will only apply upper case to the first letter
+cap = name.capitalize()
+print(cap)
+# count is used to check the number of reoccurrence of a specified entity(word, letter, figure etc)
+count_value = name.count("test")
+print("test count: ", count_value)
+t_value = name.count("t")
+print("t_count: ", t_value)
+# find -> used to get the value of a position in a string, if the value does not exist in the string -1 is returned
+find_value = name.find("is")
+print("is- find position:", find_value)
+# find for non existing value
+python_value = name.find("python")
+print("python position:", python_value)
+# index -> used to get the value of a position in a string, if the value does not exist in the string it throws an exception
+index_value = name.index("is")
+print("is- index position:", index_value)
+# index for non existing value
+#java_value = name.index("java")
+#print("java index position:", java_value)  #an exception error is thrown
+
+# strip -> trims the string, removes excess white space at the beginning & end of the string
+strip_value = name2.strip()
+print("strip value:", strip_value)
+
+# lstrip -> removes excess white space from beginning
+leftstrip_value = name2.lstrip()
+print("left strip value:", leftstrip_value)
+# rstrip -> removes excess white space from beginning
+rightstrip_value = name2.rstrip()
+print("right strip value:", rightstrip_value)
+# split -> splits the string into array using the specified value
+split_value = name.split()      # When no value is passed
+print("split no-value:", split_value)
+split_value = name.split("that")  # when a value of 'that' is passed
+print("split value:", split_value)
+split_value = name.split(' ')  # same result as when no value is passed
+print("split space:", split_value)
+# format -> used to format a value in a string.They are of 2 kinds:
+# named format
+unformatted_one = "My name is {name}. I am a {occupation}"
+formatted_one = unformatted_one.format(name="Peter", occupation="Tester")
+formatted_one2 = unformatted_one.format(name="Meghan", occupation="Princess")
+print("Formatted(named) result:",formatted_one)
+print("Formatted(named) result:",formatted_one2)
+
+# index format
+unformatted_one = "My name is {0}. I am a {1}"
+formatted_one = unformatted_one.format("Peter","Tester")
+formatted_one2 = unformatted_one.format("Meghan", "Princess")
+print("Formatted(index) result:",formatted_one)
+print("Formatted(index) result:",formatted_one2)
+
+# unindex format
+unformatted_one = "My name is {}. I am a {}"
+formatted_one = unformatted_one.format("Peter","Tester")
+formatted_one2 = unformatted_one.format("Meghan", "Princess")
+print("Formatted(unindex) result:",formatted_one)
+print("Formatted(unindex) result:",formatted_one2)
+
+print("\nLesson 15: Basic List Operations")
+# list item is the same as array in js. Its used to store a number of items under the same variable
+# List functions: append(add item to end of list), insert(add item to a specified part of list),
+# pop(remove item from specified location by index), remove(remove an item from list by the value),
+# count(return the number of items in the list), clear(remove all the items from the list)
+# copy(return a deep copy of the list), reversal(reverse order of the list), sort(sort the list)
+# extend(add a list or any other iterable items to the end of the list)
+languages = ["Python", "Java", "C#"]
+
+# append -> add item to end of list
+languages.append("Javascript")
+print("appended an item: ", languages)
+
+# insert -> add item to a specified part of list
+languages.insert(0, "C")
+languages.insert(2, "PHP")
+
+print("inserted items: ", languages)
+
+# pop-> remove item from specified location by index
+languages.pop(0)
+languages.pop() # if you dont specify the index, the last item will be removed
+print("popped an item: ", languages)
+
+# remove-> remove an item by the value from list
+remove = languages.remove("PHP")
+print("remove: ", languages)
+
+# count-> return the number of occurrence of an item in the list
+languages.append("Java")
+count = languages.count("Java")
+print("list: ", languages)
+print("count : ", count)
+
+# len -> count the number of items in the list
+length = len(languages)
+print("list: ", languages)
+print("length of list: ", length)
+
+# clear -> remove all the items from the list
+languages.clear()
+print("clear: ", languages)
+
+# copy -> return a deep copy of the list
+languages = ["Python", "Java", "C#"]
+lang_copy = languages.copy()
+print("copy: ", lang_copy)
+
+# reversal -> reverse order of the list
+languages.reverse()
+print("reversal: ", languages)
+
+# sort(sort the list in asc order)
+languages.append("Javascript")
+languages.sort()
+print("sort in asc order: ", languages)
+
+# sort(sort the list in desc order)
+languages.copy()
+languages.sort(reverse=True)
+print("sort in desc order: ", languages)
+
+# extend -> add a list or any other iterable items to the end of the list
+languages.extend(["Fortran", "PHP", "Ruby", "C"])
+print("extend: ", languages)
+
+print("\nLesson 16: Basic Dictionary Operations\n")
+# Dictionary are a set of key-value pairs (object in js) and are created using curly bracket
+# get(return the value of the specified key), items(returns the list of the tuple of the dictionary key-value),
+# keys(returns list containing dictionary key), values(returns list containing dictionary values),
+# pop(removes item with the specified key), popitem(removes last inserted key-value pair),
+# update(updates the dictionary with the specified key-value pair), clear(removes all element from dictionary)
+# copy(returns a copy of the dictionary)
+animals = {
+    "bird": "Parrot",
+    "mammal": "Cow",
+    "fish": "Titus"
+}
+print("dictionary:", animals)
+
+# get-> return the value of the specified key
+get_bird = animals.get("bird")
+get_fish = animals.get("fish")
+print("get1:", get_bird)
+print("get2:", get_fish)
+
+# items-> returns the list of the tuple of the dictionary key-value
+# tuple is denoted with () while list aka array in js is denoted with []
+# eg t = (1,2) while l = [1,2]
+animal_items = animals.items()
+print("items:", animal_items)
+
+# keys-> returns list containing dictionary key
+animal_keys = animals.keys()
+print("keys:", animal_keys)
+
+# values-> returns list containing dictionary values
+animal_values = animals.values()
+print("values:", animal_values)
+
+# pop -> removes item with the specified key
+animals.pop("mammal")
+print("popped list:", animals)
+
+# popitem -> removes last inserted key-value pair
+animals.popitem()
+print("poppeditem list:", animals)
+
+# update -> updates the dictionary with the specified key-value pair
+animals.update({"mammal": "Elephant", "fish": "Salmon", "reptile": "lizard"})
+print("updated list:", animals)
+
+# clear -> removes all element from dictionary
+animals.clear()
+print("cleared list", animals)
+
+# copy -> returns a copy of the dictionary
+animals.update({"mammal": "Elephant", "fish": "Salmon", "reptile": "lizard"})
+print("copied list:", animals)
+print(animals)
