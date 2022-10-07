@@ -1,35 +1,12 @@
-name: TAS Course Tasks
+name: JS Course Tasks
 on: [push]
 jobs: 
-  Python:
+  Javascript:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: echo "This job was automatically triggered by ${{github.event_name}} event"
       - run: |
-          cd Python
-          python3 main.py
-          python3 task1.py
-          python3 task2.py
-          python3 task3.py
-          python3 task4.py
-          python3 task5.py
-          python3 task6.py
-          python3 task7.py
-          python3 task8.py
-          python3 task9.py
-          python3 task10.py
-          python3 task11.py
-          python3 task12.py
-          python3 task13.py || true
-          python3 task14.py
-          python3 task15.py
-          python3 task16.py
-  Javascript:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          cd TAS
           cd Javascript
           npm install
           node task5.js
@@ -52,11 +29,4 @@ jobs:
           node js_coding_challenge/challenge_8.js
           node js_coding_challenge/challenge_9.js
           node js_coding_challenge/challenge_10.js
-  CICD:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          cd TAS
-          cd CICD
-          python3 main.py
-          python3 test.py
+  

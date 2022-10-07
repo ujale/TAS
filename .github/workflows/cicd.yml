@@ -1,0 +1,12 @@
+name: CICD Course Tasks
+on: [push]
+jobs: 
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "This job was automatically triggered by ${{github.event_name}} event"
+      - run: |
+          cd CICD
+          python3 main.py
+          python3 test.py
