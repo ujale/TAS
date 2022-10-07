@@ -29,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          cd -
           cd Javascript
           npm install
           node task5.js
@@ -56,7 +55,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          cd -
-          cd Javascript
+          cd CICD
           python3 main.py
           python3 test.py
