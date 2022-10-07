@@ -1,4 +1,4 @@
-name: TAS Course Tasks
+name: Python Course Tasks
 on: [push]
 jobs: 
   Python:
