@@ -1,6 +1,6 @@
 print("\nLesson3: String & concatenation\n")
 
-# Escape sequence eg \', \", \n, \t, \v, \\, \b, \r
+# Escape sequence eg \', \", \n, \t, \v, \\, \b,\r
 
 article = "This is an article\na multiline article\n\t the period will be removed from this line.\b\n I want to see what this sequence does\r"
 print(article)
