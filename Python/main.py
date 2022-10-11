@@ -1,6 +1,6 @@
 print("\nLesson3: String & concatenation\n")
 
-# Escape sequence eg \', \", \n, \t, \v, \\, \b,\r
+# Escape sequence eg \', \", \n, \t, \v, \\, \b, \r
 
 article = "This is an article\na multiline article\n\t the period will be removed from this line.\b\n I want to see what this sequence does\r"
 print(article)
@@ -136,6 +136,7 @@ for number in range(number):
         break
     print("for: Number", number)
 
+number = 5
 while number > 0:
     if number == 3:
         break
@@ -228,7 +229,7 @@ def login_test():
 login_test()
 
 
-print("\nLesson 9: Anonymous functions\n")
+print("\nLesson 10: Anonymous functions\n")
 # Also called lambda, its used when a) function has short lifespan, b)function has 1 expression c)function is to be passed into another function
 # structure of anonymous function is lambda: code block
 
@@ -427,28 +428,28 @@ print("right strip value:", rightstrip_value)
 split_value = name.split()      # When no value is passed
 print("split no-value:", split_value)
 split_value = name.split("that")  # when a value of 'that' is passed
-print("split value:", split_value)
+print("split value (that):", split_value)
 split_value = name.split(' ')  # same result as when no value is passed
-print("split space:", split_value)
+print("split space(' '):", split_value)
 # format -> used to format a value in a string.They are of 2 kinds:
 # named format
-unformatted_one = "My name is {name}. I am a {occupation}"
-formatted_one = unformatted_one.format(name="Peter", occupation="Tester")
-formatted_one2 = unformatted_one.format(name="Meghan", occupation="Princess")
+unformatted = "My name is {name}. I am a {occupation}"
+formatted_one = unformatted.format(name="Peter", occupation="Tester")
+formatted_one2 = unformatted.format(name="Meghan", occupation="Princess")
 print("Formatted(named) result:",formatted_one)
 print("Formatted(named) result:",formatted_one2)
 
 # index format
-unformatted_one = "My name is {0}. I am a {1}"
-formatted_one = unformatted_one.format("Peter","Tester")
-formatted_one2 = unformatted_one.format("Meghan", "Princess")
+unformatted = "My name is {0}. I am a {1}"
+formatted_one = unformatted.format("Peter","Tester")
+formatted_one2 = unformatted.format("Meghan", "Princess")
 print("Formatted(index) result:",formatted_one)
 print("Formatted(index) result:",formatted_one2)
 
 # unindex format
-unformatted_one = "My name is {}. I am a {}"
-formatted_one = unformatted_one.format("Peter","Tester")
-formatted_one2 = unformatted_one.format("Meghan", "Princess")
+unformatted = "My name is {}. I am a {}"
+formatted_one = unformatted.format("Peter","Tester")
+formatted_one2 = unformatted.format("Meghan", "Princess")
 print("Formatted(unindex) result:",formatted_one)
 print("Formatted(unindex) result:",formatted_one2)
 
@@ -572,3 +573,80 @@ print("cleared list", animals)
 animals.update({"mammal": "Elephant", "fish": "Salmon", "reptile": "lizard"})
 print("copied list:", animals)
 print(animals)
+
+print("\n Lesson 17: Object Oriented Programming- OOP")
+# OOP is a programming paradigm that relies on classes and objects
+# Its used to structure code into reuseable components which are called classes
+# the building blocks of OOP:COAM classes, objects, attributes, methods
+# Classes contain attributes and methods, individual objects are created from a class
+# eg
+# class Animal:               # Class
+#    name: "Cat"             # Attribute
+#    group: "Mammal"         # Attribute
+#    part: Part()            # Object
+
+#    def get_name(self):     # Method
+#        return self.name
+
+# Object is an instance of a class and contains specific data. Eg a dog object of the animal class above can have attributes name and group of its own
+
+# Class
+class Animal:               # Class
+
+    name = "Cow"             # Attribute
+    group = "Mammal"         # Attribute
+
+    def get_name_group(self):     # Method
+        return self.name + ":" + self.group
+
+# Object
+
+cow = Animal()
+print(cow.name, cow.group, cow.get_name_group())
+
+#cow2 = Animal()
+#cow3 = Animal()
+#cow4 = Animal()
+
+print("\n Lesson 18: OOP Attributes")
+# Attributes are info stored in a class and if an object is present in a class the attributes store info of the element in the object
+# In otherwords, attributes are like variables that are exclusive to a class
+# There are 2 types of attributes: Class & instance
+# class attributes: Attributes declared inside class but outside method. They are not tied to any instance method & thus are shared across all class method
+# instance attributes: Attributes declared inside a class constructor or method. They are tied to a particular object instance & modifying them does not change the object instance
+# eg
+class Animal:
+
+    group = "Mammal"           # class variable
+    can_walk = True
+
+    def __init__(self, name):
+        self.name = name       # instance variable
+
+cat = Animal("Cat")
+dog = Animal("Dog")
+
+print(cat.name)                 # instance variable
+print(dog.name)
+
+print(cat.group)                # class variable
+print(dog.group)
+
+print("\nLesson 19: OOP Methods")
+# Method is a function defined inside a class to perform a specific action. It can return value, accept parameter
+# Constructor: special type of method used to instantiate a class object. the instance attribute are created in the constructor
+# The name of the constructor in python is __init__
+# There are 2 types of constructors: default (doesnt accept parameters), parameterised constructors
+class Animal:
+
+    leg_count = 4
+    group = "Mammal"           # class variable
+
+    def __init__(self, name):   # Method: Constructor
+        self.name = name
+
+    def get_name(self):         # Method:
+        return self.name
+
+    def get_group(self):        # Method:
+        return self.group
