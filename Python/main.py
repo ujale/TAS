@@ -579,11 +579,12 @@ print("\n Lesson 17: Object Oriented Programming- OOP")
 # Its used to structure code into reuseable components which are called classes
 # the building blocks of OOP:COAM classes, objects, attributes, methods
 # Classes contain attributes and methods, individual objects are created from a class
+# The first parameter in a method in python is called 'self'
 # eg
 # class Animal:               # Class
-#    name: "Cat"             # Attribute
-#    group: "Mammal"         # Attribute
-#    part: Part()            # Object
+#    name = "Cat"             # Attribute
+#    group = "Mammal"         # Attribute
+#    part = Part()            # Object
 
 #    def get_name(self):     # Method
 #        return self.name
@@ -639,8 +640,8 @@ print("\nLesson 19: OOP Methods")
 # There are 2 types of constructors: default (doesnt accept parameters), parameterised constructors
 class Animal:
 
-    leg_count = 4
     group = "Mammal"           # class variable
+    leg_count = 4
 
     def __init__(self, name):   # Method: Constructor
         self.name = name
@@ -650,3 +651,99 @@ class Animal:
 
     def get_group(self):        # Method:
         return self.group
+
+# Examples
+
+class Animal:
+
+    group = "Mammal"
+    leg_count = 4
+
+# Default constructor
+    def __init__(self):
+        self.name = "Unknown`"
+
+animal = Animal()
+print("Animal: ", animal.name, animal.group)
+
+
+class Vehicle:
+
+    can_fly = False
+    tire_count = 4
+
+# Parameterized constructor
+    def __init__(self, make):  # Adding a parameter called make to the class
+        self.make = make
+
+# Normal parameterised method
+    def set_tire_count(self, count):        # A method to set_tire_count using the parameter 'count'
+        self.tire_count = count
+
+    def set_flyability(self, cfly):        # A method to set flyability using the parameter 'cfly'
+        self.can_fly = cfly
+
+# Normal unparameterised method
+    def set_make_tire_count(self):        # A method to set 2 variables of make and tire count
+        return self.make + ":" + str(self.tire_count)
+
+    def check_type(self):
+        if self.make == "Aeroplane":
+            print("This is an Aeroplane")
+        else:
+            print("This is likely a car")
+
+toyota = Vehicle("Toyota")
+print("\nVehicle: ", toyota.make, toyota.tire_count)
+toyota.check_type()
+
+
+lexus = Vehicle("Lexus")
+print("\nVehicle: ", lexus.make, lexus.can_fly)
+lexus.check_type()
+
+plane = Vehicle("Aeroplane")
+plane.set_tire_count(3)                     # invoking the set_tire_count method
+plane.set_flyability(True)                  # invoking the flyability method
+plane.set_make_tire_count()                  # invoking the set make & tire count method
+print("Vehicle: ", plane.make, plane.tire_count, plane.can_fly)
+print("Vehicle\'s make & tire count: ", plane.set_make_tire_count())
+plane.check_type()
+
+print("\n OOP: Inheritance\n")
+# 4 principles of OOP in python are: Inheritance, Polymorphism, Encapsulation, Data Abstraction
+# Inheritance: ability of a class to inherit objects, attributes & methods from another class
+# Polymorphism: ability for a method to perform any function/logic
+# Encapsulation: ability to hide some data and only expose data you need
+# Data Abstraction: allows us to have attributes & core logic to be in the class while exposing only the method to the user
+# Base class/parent class (class that gives the properties) ---> derived/child class (class that recieves the properties)
+
+class Vehicle:
+    model = "unknown"
+    make = "unknown"
+    production_year = 1990
+
+    def print_vehicle_info(self):
+        print("\n Vehicle{", self.model + ":" + self.make + "}")
+
+class Car(Vehicle):
+    wheel_count = 4
+
+    def __init__(self, make, model):        # we used a constructor to modify the attributes in vehicle class
+        self.make = make
+        self.model = model
+
+class Plane(Vehicle):
+    model = "Aeroplane"         # We assigned another value to the attributes in vehicle (make & model)
+    make = "Boeing"
+
+vehicle1 = Vehicle()
+vehicle1.print_vehicle_info()
+
+car1 = Car("Toyota", "Camry")
+car1.print_vehicle_info()
+
+plane1 = Plane()
+plane1.print_vehicle_info()
+
+
