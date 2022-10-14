@@ -1,3 +1,5 @@
+
+
 print("\nLesson3: String & concatenation\n")
 
 # Escape sequence eg \', \", \n, \t, \v, \\, \b, \r
@@ -710,7 +712,7 @@ print("Vehicle: ", plane.make, plane.tire_count, plane.can_fly)
 print("Vehicle\'s make & tire count: ", plane.set_make_tire_count())
 plane.check_type()
 
-print("\n OOP: Inheritance\n")
+print("\n Lesson 20: OOP: Inheritance\n")
 # 4 principles of OOP in python are: Inheritance, Polymorphism, Encapsulation, Data Abstraction
 # Inheritance: ability of a class to inherit objects, attributes & methods from another class
 # Polymorphism: ability for a method to perform any function/logic
@@ -746,4 +748,93 @@ car1.print_vehicle_info()
 plane1 = Plane()
 plane1.print_vehicle_info()
 
+
+print("\nLesson 21: Polymorphism")
+# Capability of many class methods to perform the same task
+# Using inheritance a class can override the parent method & polymorphism allows the same method to perform
+# different functions
+
+class Vehicle:
+
+    def drive_direction(self):
+        print("Vehicle: Drive forward")
+
+vehicle = Vehicle()
+vehicle.drive_direction()
+
+class Plane(Vehicle):
+
+    def drive_direction(self):
+        print("Plane: Drive upward")
+
+plane = Plane()
+plane.drive_direction()
+
+
+class Submarine(Vehicle):
+
+    def drive_direction(self):
+        print("Submarine: Drive downward")
+
+submarine = Submarine()
+submarine.drive_direction()
+
+print("\n Lesson 22: Encapsulation")
+# Idea pf enclosing info in a class and exposing only selected info.
+# This puts a restriction on accessing attributes and methods which can lead to accidental manipulation of data
+# we use __ infront of an attribute to denote a private attribute
+
+class User:
+
+    __first_name = "Testify"
+    __last_name = "QA"
+    __attendance = 1
+
+    def get_name(self):
+        return "User: " + self.__first_name
+
+    def get_attendance(self):
+        value = self.__attendance * 20
+        return value
+
+user = User()
+print(user.get_name())
+print(user.get_attendance())
+
+
+print("\n Lesson 23: OOP Data Abstraction")
+# This is used to hide unneccesary info from user. Its similar to encapsulation but uses masking to hide info
+# Data abstraction uses private attributes & abstract classes
+
+class LoginSession:
+
+    __email = "user@test.com"
+    __password = "password"
+
+    def get_email(self):
+        return self.__email
+
+    def get_password(self,):
+        return "**********"     # masking the actual value
+
+session = LoginSession()
+print(session.get_email())
+print(session.get_password())
+
+
+print("\n Lesson 24: Abstract Class & Interface\n")
+# Abstract classes are classes that contain abstract methods.
+# Abstract methods are methods that are declared but not implemented
+# A class inheriting from an abstract class must implement the abstract method
+# Python has a built-in ABC(Abstract Base Classes) library that enables us create & use abstract classes
+# To declare an abstract class, the class metaclass value should be set abc.ABCMeta or the class should inherit
+# from abc.ABC class
+# Interfaces are similar to abstract methods in that they define abstract methods. The difference in interface is
+# that it does not implement method when subclassed
+
+# When to use abstract classes & interfaces:
+# 1. When the parent class wants to transfer logic to the child
+# 2. For new features you want to implement in the future
+# 3. If the API wont be changing for awhile
+# 4. for the blueprint of business components
 
