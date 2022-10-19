@@ -837,4 +837,149 @@ print("\n Lesson 24: Abstract Class & Interface\n")
 # 2. For new features you want to implement in the future
 # 3. If the API wont be changing for awhile
 # 4. for the blueprint of business components
+import abc
+
+
+class IWebElement(metaclass=abc.ABCMeta):  # declaring an abstract class by setting metaclass
+
+    @abc.abstractmethod  # notation
+    def get_name(self):
+        pass
+
+    @abc.abstractmethod
+    def set_style(self, style):
+        pass
+
+
+class DivElement(IWebElement):
+
+    def get_name(self):
+        return "div"
+
+    def set_style(self, style):
+        print("Div style:", style)
+
+
+class SpanElement(IWebElement):
+
+    def get_name(self):
+        return "span"
+
+    def set_style(self, style):
+        print("Span style:", style)
+
+
+class ButtonElement(IWebElement):
+
+    def get_name(self):
+        return "button"
+
+    def set_style(self, style):
+        print("Button style:", style)
+
+
+div_element = DivElement()
+print(div_element.get_name())
+div_element.set_style("Width: 100px; height: 100px;")
+
+span_element = SpanElement()
+print(span_element.get_name())
+div_element.set_style("Border: 1px; solid red")
+
+button_element = ButtonElement()
+print(button_element.get_name())
+div_element.set_style("Font-size: 20px; Font-weight: bold;")
+
+
+print("\n Lesson 25: OOP Static Methods\n")
+# Static methods are methods that are bound to the class and not the class object.
+# We dont need to add 'self' when using static methods
+# Static methods do not require the initialization of class like the methods we have been working on so far
+# static methods are created in 2 ways:
+# a) Using built-in staticmethod() function The syntax is classname.functionname = staticmethod(lassname.functionname)
+# b) Using @staticmethod annotation
+
+#print("Using staticmethod() function")
+
+# class Calc:
+#    def add(num1, num2):
+#        return num1+num2
+#    Calc.add = staticmethod(Calc.add)
+
+#print("Using @staticmethod annotation")
+
+#class Calc:
+
+#    @staticmethod
+#    def add(num1, num2):
+#        return num1+num2
+
+# EG
+class Calculator:
+
+    def add(num1, num2):
+        return num1 + num2
+
+Calculator.add = staticmethod(Calculator.add )
+print("1 + 2 = ", Calculator.add (1,2))
+
+class Calculator:
+
+    @staticmethod
+    def multiply(num1, num2):
+        return num1 * num2
+
+print("6 * 2 = ", Calculator.multiply(6,2))
+
+class Calculator:
+
+    @staticmethod
+    def divide(num1, num2):
+        return num1 / num2
+
+print("6 / 3 = ", Calculator.divide(6,3))
+
+
+print("\n Lesson 26: Unit test")
+# Unit test is he process of testing the smallest, testable part of an application
+# Can be manual or automated using unit testing frameworks
+# Eg of unit testing frameworks are:
+# Pytest: Used for functional testing,
+# Unittest: Contains defined test cases,
+# Robot
+# DocTest: Used for BDD
+# Nose2,
+# Testify
+
+print("\n Lesson 27: PyTest")
+# PyTest is an open source python based testing framework that is generally all-purpose but specific for
+# functional and API testing
+
+print("\n To install PyTest for python version 2, use the following command on terminal:\n pip install -U pytest")
+print("\n To install PyTest for python version 3, use the following command on terminal:\n pip3 install -U pytest")
+print("\n To check the version of pytest installed:\n python3 -m pytest --version")
+
+print("\nWriting test cases in pytest")
+# Any file that begins with test_ is regarded as a test file while any function that begings with test_
+# is a test case
+# Example is the test_bodmas_python.py test file that imports the bodmas.py test. Different assertions are
+# contained in the test_bodmas_python.py file
+print("\nTo run the test cases in pytest type this command in terminal: <pytest> or <python3 -m pytest ./>")
+print("\nTo run several test files with a folder\n 1. cd into the folder \n 2. enter command: python3 -m pytest ./")
+
+print("\nLesson 28: Unittest")
+# This is an in-built unit test framework that comes preinstalled when python is installed
+# To use unit test just import your unittest model and then define your test class by extending it with
+# unittest.TestCase
+
+print("\nTo run the test cases in unittest type this command in terminal: <python3 -m unittest")
+# Example is the test_bodmas_unittest.py test file that imports the bodmas.py test and the in-built unittest library
+# The assertions used are from the in-built unittest library
+
+print("\nLesson 29: Which framework to use")
+
+# Functional & APIs use Pytest or Nose2. You dont need to define a class, just use method directly
+# OOP/Test suite use unittest or testify or doctest. This is for tests that are grouped into test suites and
+# thus you will use classes for that
+
 
