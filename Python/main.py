@@ -960,10 +960,10 @@ print("\n To install PyTest for python version 3, use the following command on t
 print("\n To check the version of pytest installed:\n python3 -m pytest --version")
 
 print("\nWriting test cases in pytest")
-# Any file that begins with test_ is regarded as a test file while any function that begings with test_
+# Any file that begins with test_ is regarded as a test file while any function that beginngs with test_
 # is a test case
-# Example is the test_bodmas_python.py test file that imports the bodmas.py test. Different assertions are
-# contained in the test_bodmas_python.py file
+# Example is the test_bodmas_pytest.py test file that imports the bodmas.py test. Different assertions are
+# contained in the test_bodmas_pytest.py file
 print("\nTo run the test cases in pytest type this command in terminal: <pytest> or <python3 -m pytest ./>")
 print("\nTo run several test files with a folder\n 1. cd into the folder \n 2. enter command: python3 -m pytest ./")
 
