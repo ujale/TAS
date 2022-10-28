@@ -18,7 +18,7 @@ def locator_by_class_name(driver):
     print("React reveal first element: ", rr_first_element)
     rr_elements = driver.find_elements(By.CLASS_NAME, "react-reveal")
     for rr_element in rr_elements:
-        print("React reveal element: ", rr_elements)
+        print("React reveal element: ", rr_element)
 
 
 
