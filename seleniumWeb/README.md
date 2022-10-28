@@ -72,7 +72,7 @@ Types of locators are:
 2. Id
 3. Class
 4. Tag Name
-5. Css Selector
-6. XPath
-7. Link Text
+5. Css Selector: This is advisable for use when there is no ID or class name for the the element or where the ID or class name changes with each load i.e dynamic. 
+6. XPath: This is advisable for use when there is no ID or class name for the the element or where the ID or class name changes with each load i.e dynamic. We can use either the Xpath or Full Xpath when rightclick and copy them from the website's dev tools element page
+7. Link Text: These usually contain the 'a' tag in them and href i.e <a >. What we copy is the content of the link
 8. Partial Link Text
