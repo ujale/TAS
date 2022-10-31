@@ -979,7 +979,7 @@ print("\nTo run the test cases in unittest type this command in terminal: <pytho
 print("\nLesson 29: Which framework to use")
 
 # Functional & APIs use Pytest or Nose2. You dont need to define a class, just use method directly
-# OOP/Test suite use unittest or testify or doctest. This is for tests that are grouped into test suites and
+# OOP/Test suite use unittest or testify or doctest. This is for unit_testing that are grouped into test suites and
 # thus you will use classes for that
 
 
