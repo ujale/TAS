@@ -76,3 +76,52 @@ Types of locators are:
 6. XPath: This is advisable for use when there is no ID or class name for the the element or where the ID or class name changes with each load i.e dynamic. We can use either the Xpath or Full Xpath when rightclick and copy them from the website's dev tools element page
 7. Link Text: These usually contain the 'a' tag in them and href i.e <a >. What we copy is the content of the link
 8. Partial Link Text
+
+# Lesson 14: Difference between Element Attribute & Element Property
+
+Element attribute is static eg anchor tag, href of linked text etc, while element property refers to the computed property that can be dynamic eg checkbox (can be checked on unchecked), value, input fields etc.
+
+Selenium uses the get_property() method to inspect the element property
+
+# Lesson 15: Sending Key Event
+This is done using the send_keys() method. In the lesson i wrote 2 ways of sending keys: directly or by using another method instead of main method
+
+# Lesson 16: Sending mouse events
+This is done using the click() method
+
+# Lesson 17: Action Chains
+These are used to automate low level interactions such as mouse movement, move button actions, key press, scrolling, highlighting text, right-click event, copy & paste event, element dragging etc.
+To use action chains, first you import the package from selenium webdriver by including <from selenium.webdriver import ActionChains>
+Next, initialize the actions object with the webdriver 
+i.e actions = ActionChains(driver)
+
+scroll by offset is used to similate trackpad option of scrollimg on mouse. it uses y delta values.A negative value for the delta y means to scroll up. 
+scroll to element is similae to scroll by offset in function but uses an element locator instead of y delta value
+
+The default xter limit in the highlighting is 15.
+
+# Lesson 18: Element Visibility
+This involves checking if the element is present on the web page or if it can recieve events from selenium. The following methods are used to get element visibility & state:
+is_displayed
+is_enabled
+is_selected
+
+# Lesson 19: Navigation
+Events like moving forward, backward, refresh, maximize & minimize window
+The commands are driver.maximize_window(), driver.refresh, driver.back, driver.forward
+
+# Lesson 20: Synchronization
+Explicit wait = This is a method in selenium that allows you wait until an element is visible or ready to recieve an event using WebDriverWait and ExpectedCondition class.
+to use explicit wait, import both webdriverwait & expectedcondition:
+
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+The following are EC methods that can be used:
+element_to_be_clicked
+visibility_of_element_located
+element_to_be_selected
+element_attribute_to_include
+
+Alternatively, you can use the time package in python to wait for X secs before performing an event = implicit wait
+Its advised to refrain from use of time.sleep() (which is python's time package)
