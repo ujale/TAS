@@ -125,3 +125,10 @@ element_attribute_to_include
 
 Alternatively, you can use the time package in python to wait for X secs before performing an event = implicit wait
 Its advised to refrain from use of time.sleep() (which is python's time package)
+
+
+# Lesson 21: Javascript Execution
+Selenium allows for JS execution on webpages by invoking execute_script method in the driver class
+
+# Lesson 22: Page Object Model
+POM is a design pattern used to create an object used to store web elements used on a webpage
