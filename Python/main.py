@@ -2,13 +2,17 @@
 
 print("\nLesson3: String & concatenation\n")
 
-# Escape sequence eg \', \", \n, \t, \v, \\, \b, \r
+# Escape sequence eg \', \", \n (new line), \t (horizontal tab), \v(vertical tab), \\(backslash), \b(backspace), \r (carriage return)
 
 article = "This is an article\na multiline article\n\t the period will be removed from this line.\b\n I want to see what this sequence does\r"
 print(article)
 
+"\nAnother example"
+art = "Test\r carriage return.Test \vvertical tab. Then \\What about backslash"
+print(art)
+
 # Raw string
-anotherArticle = r"This is an article\na multiline article\n\t the period will be removed from this line.\b\n "
+anotherArticle = r"This is an article,a multiline article\n\t the period will be removed from this line.\b\n "
 print(anotherArticle)
 
 # Concatenation
@@ -237,7 +241,7 @@ print("\nLesson 10: Anonymous functions\n")
 
 greet = lambda: print("Hello World Anonymous")
 def accept(cb):
-    cb("Hello")
+   cb("Hello")
 
 
 greet()   # use b) function has 1 expression
@@ -360,6 +364,9 @@ def reduce_number_loop(num):
         print(num)
         num -= 1
 
+reduce_number_loop(5)
+print()
+
 print("\nRecursionError\n")
 # This error occurs when function calls itself repeatedly for the maximum number of depth configured in python
 #def print_hello():
@@ -375,8 +382,6 @@ print("\nRecursionError\n")
 #        return
 #    reduce_number_recurssion(num-1)
 
-reduce_number_loop(5)
-print()
 #reduce_number_recurssion(5)
 
 print("\n Lesson 14: Basic String Operation\n")

@@ -1,0 +1,444 @@
+1667916957735	geckodriver	INFO	Listening on 127.0.0.1:61955
+1667916957920	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61956" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileXR04dW"
+1667916958569	Marionette	INFO	Marionette enabled
+1667916958749	Marionette	INFO	Listening on port 61967
+Read port: 61967
+2022-11-08 15:15:58.762 plugin-container[76444:2461899] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:15:58.763 plugin-container[76444:2461899] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:61956
+1667916958981	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:15:59.302 plugin-container[76444:2461899] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:15:59.302 plugin-container[76444:2461899] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:15:59.303 plugin-container[76444:2461897] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:15:59.303 plugin-container[76444:2461897] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileXR04dW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61956/devtools/browser/5d842f25-2197-40c9-aa05-dd7112709938
+1667917163792	geckodriver	INFO	Listening on 127.0.0.1:62892
+1667917163965	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62893" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile9nYC1d"
+2022-11-08 15:19:24.362 plugin-container[76515:2464047] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:19:24.362 plugin-container[76515:2464047] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:19:24.365 plugin-container[76515:2464047] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:19:24.365 plugin-container[76515:2464047] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:19:24.366 plugin-container[76515:2464051] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:19:24.366 plugin-container[76515:2464051] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667917164384	Marionette	INFO	Marionette enabled
+1667917164542	Marionette	INFO	Listening on port 62904
+Read port: 62904
+WebDriver BiDi listening on ws://127.0.0.1:62893
+1667917164659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile9nYC1d/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62893/devtools/browser/633fb54b-77dd-4aac-b575-6261d478f4ff
+1667917210073	Marionette	INFO	Stopped listening on port 61967
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1667917213771	Marionette	INFO	Stopped listening on port 62904
+1667917628726	geckodriver	INFO	Listening on 127.0.0.1:64830
+1667917628908	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64831" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileUmPw64"
+2022-11-08 15:27:09.383 plugin-container[76647:2468271] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:27:09.383 plugin-container[76647:2468271] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667917629406	Marionette	INFO	Marionette enabled
+2022-11-08 15:27:09.408 plugin-container[76647:2468271] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:27:09.409 plugin-container[76647:2468271] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:27:09.409 plugin-container[76647:2468279] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:27:09.409 plugin-container[76647:2468279] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667917629621	Marionette	INFO	Listening on port 64846
+Read port: 64846
+WebDriver BiDi listening on ws://127.0.0.1:64831
+1667917629898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileUmPw64/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64831/devtools/browser/8c3e5bdb-584c-44c4-80a9-cbfb331cbcf3
+1667917645196	Marionette	INFO	Stopped listening on port 64846
+1667917871835	geckodriver	INFO	Listening on 127.0.0.1:49485
+1667917871990	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49486" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileIioPWl"
+1667917872641	Marionette	INFO	Marionette enabled
+2022-11-08 15:31:12.784 plugin-container[76728:2470909] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:31:12.784 plugin-container[76728:2470909] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667917872869	Marionette	INFO	Listening on port 49497
+Read port: 49497
+WebDriver BiDi listening on ws://127.0.0.1:49486
+1667917873176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:31:13.301 plugin-container[76728:2470909] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:31:13.301 plugin-container[76728:2470909] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:31:13.301 plugin-container[76728:2470911] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:31:13.301 plugin-container[76728:2470911] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileIioPWl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49486/devtools/browser/b2a25dfe-f267-4446-a071-c1f068ad9973
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667917983433	geckodriver	INFO	Listening on 127.0.0.1:50011
+1667917983605	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50012" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilesKregw"
+1667917984317	Marionette	INFO	Marionette enabled
+1667917984547	Marionette	INFO	Listening on port 50023
+Read port: 50023
+WebDriver BiDi listening on ws://127.0.0.1:50012
+1667917984898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:33:04.933 plugin-container[76791:2472502] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:33:04.934 plugin-container[76791:2472502] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:33:05.300 plugin-container[76791:2472502] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:33:05.300 plugin-container[76791:2472502] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:33:05.301 plugin-container[76791:2472525] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:33:05.301 plugin-container[76791:2472525] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilesKregw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50012/devtools/browser/4fcd7e57-2e8d-4558-a371-28685040fdb7
+1667918004863	Marionette	INFO	Stopped listening on port 49497
+1667918008282	Marionette	INFO	Stopped listening on port 50023
+1667918104292	geckodriver	INFO	Listening on 127.0.0.1:50541
+1667918104456	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50542" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiletVCQUF"
+1667918105145	Marionette	INFO	Marionette enabled
+1667918105390	Marionette	INFO	Listening on port 50557
+Read port: 50557
+WebDriver BiDi listening on ws://127.0.0.1:50542
+2022-11-08 15:35:05.506 plugin-container[76834:2473852] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:35:05.562 plugin-container[76834:2473852] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667918105598	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:35:05.989 plugin-container[76834:2473852] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:35:05.989 plugin-container[76834:2473852] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:35:05.990 plugin-container[76834:2473877] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:35:05.990 plugin-container[76834:2473877] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiletVCQUF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50542/devtools/browser/b078b8db-fba6-4e91-bd7f-b01a02f1f888
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667918245966	geckodriver	INFO	Listening on 127.0.0.1:51202
+1667918246138	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51203" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilenOlUsz"
+1667918246536	Marionette	INFO	Marionette enabled
+1667918246622	Marionette	INFO	Listening on port 51214
+Read port: 51214
+2022-11-08 15:37:26.837 plugin-container[76884:2475466] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:37:26.841 plugin-container[76884:2475466] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:51203
+1667918246952	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:37:27.194 plugin-container[76884:2475466] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:37:27.194 plugin-container[76884:2475466] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:37:27.195 plugin-container[76884:2475567] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:37:27.195 plugin-container[76884:2475567] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilenOlUsz/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51203/devtools/browser/3e67eb1b-943f-43e3-926e-c923220b5ec6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+2022-11-08 14:37:44.910 plugin-container[76896:2476001] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:37:44.911 plugin-container[76896:2476001] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 14:37:44.913 plugin-container[76896:2476001] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:37:44.913 plugin-container[76896:2476001] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 14:37:44.914 plugin-container[76896:2476007] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:37:44.914 plugin-container[76896:2476007] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667918343763	Marionette	INFO	Stopped listening on port 50557
+1667918346788	Marionette	INFO	Stopped listening on port 51214
+1667918352447	geckodriver	INFO	Listening on 127.0.0.1:51728
+1667918352619	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51729" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileTMOH70"
+1667918353130	Marionette	INFO	Marionette enabled
+2022-11-08 15:39:13.135 plugin-container[76935:2477069] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:39:13.135 plugin-container[76935:2477069] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:39:13.189 plugin-container[76935:2477069] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:39:13.190 plugin-container[76935:2477069] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:39:13.190 plugin-container[76935:2477072] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:39:13.190 plugin-container[76935:2477072] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667918353290	Marionette	INFO	Listening on port 51744
+Read port: 51744
+WebDriver BiDi listening on ws://127.0.0.1:51729
+1667918353573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileTMOH70/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51729/devtools/browser/58483ede-24c9-4c06-b0d2-edba12090830
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+2022-11-08 14:39:31.934 plugin-container[76945:2477497] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:39:31.934 plugin-container[76945:2477497] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 14:39:31.936 plugin-container[76945:2477497] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:39:31.936 plugin-container[76945:2477497] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 14:39:31.936 plugin-container[76945:2477492] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 14:39:31.936 plugin-container[76945:2477492] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667918399541	Marionette	INFO	Stopped listening on port 51744
+1667918977746	geckodriver	INFO	Listening on 127.0.0.1:54351
+1667918977873	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54352" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilejRkzex"
+1667918978631	Marionette	INFO	Marionette enabled
+1667918978945	Marionette	INFO	Listening on port 54363
+Read port: 54363
+WebDriver BiDi listening on ws://127.0.0.1:54352
+2022-11-08 15:49:39.083 plugin-container[77034:2481967] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:49:39.148 plugin-container[77034:2481967] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667918979194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:49:39.688 plugin-container[77034:2481967] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:49:39.688 plugin-container[77034:2481967] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:49:39.689 plugin-container[77034:2481969] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:49:39.689 plugin-container[77034:2481969] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilejRkzex/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54352/devtools/browser/7cb018d3-39a4-4bb8-96fa-fb04d91d1c61
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667919230006	geckodriver	INFO	Listening on 127.0.0.1:55456
+1667919230183	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55457" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiley0aITn"
+2022-11-08 15:53:50.902 plugin-container[77112:2484177] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:53:50.923 plugin-container[77112:2484177] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667919230926	Marionette	INFO	Marionette enabled
+1667919231198	Marionette	INFO	Listening on port 55472
+Read port: 55472
+WebDriver BiDi listening on ws://127.0.0.1:55457
+1667919231637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:53:52.050 plugin-container[77112:2484177] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:53:52.069 plugin-container[77112:2484177] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:53:52.069 plugin-container[77112:2484185] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:53:52.069 plugin-container[77112:2484185] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiley0aITn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55457/devtools/browser/d7aeddad-3beb-4a7a-a326-90f4f63d465a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667919244367	Marionette	INFO	Stopped listening on port 54363
+1667919423270	geckodriver	INFO	Listening on 127.0.0.1:56317
+1667919423445	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "56318" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileh4xOab"
+1667919424279	Marionette	INFO	Marionette enabled
+1667919424643	Marionette	INFO	Listening on port 56329
+Read port: 56329
+WebDriver BiDi listening on ws://127.0.0.1:56318
+1667919424997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 15:57:05.005 plugin-container[77218:2486561] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:57:05.099 plugin-container[77218:2486561] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:57:05.601 plugin-container[77218:2486561] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:57:05.601 plugin-container[77218:2486561] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 15:57:05.602 plugin-container[77218:2486586] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 15:57:05.602 plugin-container[77218:2486586] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileh4xOab/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56318/devtools/browser/8ad16e9c-4b13-4548-988f-b3378cc2f0f9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667919437137	Marionette	INFO	Stopped listening on port 55472
+1667919442893	Marionette	INFO	Stopped listening on port 56329
+1667923844855	geckodriver	INFO	Listening on 127.0.0.1:54786
+1667923845025	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54787" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile0d14RP"
+1667923846467	Marionette	INFO	Marionette enabled
+1667923846580	Marionette	INFO	Listening on port 54802
+Read port: 54802
+WebDriver BiDi listening on ws://127.0.0.1:54787
+1667923846803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 17:10:46.869 plugin-container[78052:2519202] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:10:46.870 plugin-container[78052:2519202] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 17:10:47.877 plugin-container[78052:2519202] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:10:47.877 plugin-container[78052:2519202] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 17:10:47.878 plugin-container[78052:2519200] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:10:47.878 plugin-container[78052:2519200] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile0d14RP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54787/devtools/browser/463869ae-58d0-474a-955a-94959df0b416
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667924030847	geckodriver	INFO	Listening on 127.0.0.1:55616
+1667924030995	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55617" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilerMnwpM"
+1667924031692	Marionette	INFO	Marionette enabled
+1667924031912	Marionette	INFO	Listening on port 55628
+Read port: 55628
+2022-11-08 17:13:52.214 plugin-container[78108:2521116] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:13:52.214 plugin-container[78108:2521116] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:55617
+1667924032534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 17:13:53.117 plugin-container[78108:2521116] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:13:53.117 plugin-container[78108:2521116] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 17:13:53.118 plugin-container[78108:2521258] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 17:13:53.118 plugin-container[78108:2521258] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilerMnwpM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55617/devtools/browser/2712dcb5-db9b-4256-936e-452b7d69de76
+1667924039178	Marionette	INFO	Stopped listening on port 54802
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667938293549	geckodriver	INFO	Listening on 127.0.0.1:49529
+1667938293718	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49530" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiledP8R8W"
+1667938295008	Marionette	INFO	Marionette enabled
+1667938295211	Marionette	INFO	Listening on port 49545
+Read port: 49545
+WebDriver BiDi listening on ws://127.0.0.1:49530
+1667938295471	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 21:11:36.030 plugin-container[78456:2541866] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:11:36.082 plugin-container[78456:2541866] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiledP8R8W/search.json.mozlz4", (void 0)))
+2022-11-08 21:11:37.096 plugin-container[78456:2541866] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:11:37.097 plugin-container[78456:2541866] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:11:37.097 plugin-container[78456:2541903] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:11:37.097 plugin-container[78456:2541903] nil host used in call to allowsAnyHTTPSCertificateForHost:
+DevTools listening on ws://127.0.0.1:49530/devtools/browser/086f7b33-c6d2-42f3-857e-3224b29d354c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667938325189	Marionette	INFO	Stopped listening on port 49545
+1667938330483	Marionette	INFO	Stopped listening on port 55628
+1667939249551	geckodriver	INFO	Listening on 127.0.0.1:53467
+1667939249716	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53468" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile3nl6tT"
+1667939250979	Marionette	INFO	Marionette enabled
+1667939251097	Marionette	INFO	Listening on port 53479
+Read port: 53479
+WebDriver BiDi listening on ws://127.0.0.1:53468
+2022-11-08 21:27:31.283 plugin-container[78669:2549116] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:27:31.284 plugin-container[78669:2549116] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667939251303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 21:27:31.641 plugin-container[78669:2549116] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:27:31.641 plugin-container[78669:2549116] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:27:31.641 plugin-container[78669:2549124] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:27:31.641 plugin-container[78669:2549124] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile3nl6tT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53468/devtools/browser/7f5592aa-9916-453d-a5f3-8c742f7a0234
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667939375111	geckodriver	INFO	Listening on 127.0.0.1:54044
+1667939375260	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54045" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilePOE7XE"
+1667939375657	Marionette	INFO	Marionette enabled
+1667939375733	Marionette	INFO	Listening on port 54056
+Read port: 54056
+2022-11-08 21:29:35.951 plugin-container[78709:2550242] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:29:35.952 plugin-container[78709:2550242] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:29:35.993 plugin-container[78709:2550242] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:29:35.993 plugin-container[78709:2550242] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:29:35.993 plugin-container[78709:2550278] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:29:35.993 plugin-container[78709:2550278] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:54045
+1667939376063	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilePOE7XE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54045/devtools/browser/b6082fa0-d127-4899-bb90-9d8a5fa9f22c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667939382773	Marionette	INFO	Stopped listening on port 53479
+1667939465834	Marionette	INFO	Stopped listening on port 54056
+1667939504068	geckodriver	INFO	Listening on 127.0.0.1:54626
+1667939504206	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54627" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileafuktL"
+1667939504928	Marionette	INFO	Marionette enabled
+2022-11-08 21:31:45.144 plugin-container[78810:2552731] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:31:45.144 plugin-container[78810:2552731] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667939505203	Marionette	INFO	Listening on port 54642
+Read port: 54642
+2022-11-08 21:31:45.330 plugin-container[78810:2552731] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:31:45.330 plugin-container[78810:2552731] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:31:45.330 plugin-container[78810:2552800] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:31:45.330 plugin-container[78810:2552800] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:54627
+1667939505450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileafuktL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54627/devtools/browser/20702c60-be7a-4d56-957e-b0981db6a9fd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667939659968	geckodriver	INFO	Listening on 127.0.0.1:55323
+1667939660137	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55324" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKQpaAc"
+1667939661018	Marionette	INFO	Marionette enabled
+1667939661406	Marionette	INFO	Listening on port 55336
+Read port: 55336
+WebDriver BiDi listening on ws://127.0.0.1:55324
+2022-11-08 21:34:21.616 plugin-container[78981:2555066] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:34:21.669 plugin-container[78981:2555066] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667939661723	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 21:34:22.737 plugin-container[78981:2555066] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:34:22.743 plugin-container[78981:2555066] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:34:22.744 plugin-container[78981:2555263] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:34:22.744 plugin-container[78981:2555263] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKQpaAc/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55324/devtools/browser/3562aab8-f85d-4099-af27-28522547728c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667939668146	Marionette	INFO	Stopped listening on port 54642
+2022-11-08 20:34:37.028 plugin-container[79003:2555646] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 20:34:37.028 plugin-container[79003:2555646] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 20:34:37.030 plugin-container[79003:2555646] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 20:34:37.030 plugin-container[79003:2555646] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 20:34:37.030 plugin-container[79003:2555651] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 20:34:37.030 plugin-container[79003:2555651] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667939785951	Marionette	INFO	Stopped listening on port 55336
+1667939988708	geckodriver	INFO	Listening on 127.0.0.1:56748
+1667939988867	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "56749" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileV60y8W"
+1667939989910	Marionette	INFO	Marionette enabled
+1667939990081	Marionette	INFO	Listening on port 56760
+Read port: 56760
+WebDriver BiDi listening on ws://127.0.0.1:56749
+1667939990390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 21:39:50.537 plugin-container[79134:2559045] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:39:50.539 plugin-container[79134:2559045] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:39:51.224 plugin-container[79134:2559045] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:39:51.224 plugin-container[79134:2559045] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:39:51.225 plugin-container[79134:2559096] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:39:51.225 plugin-container[79134:2559096] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileV60y8W/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56749/devtools/browser/c111bbb8-f14b-4c61-8230-64940070aa45
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667940107474	geckodriver	INFO	Listening on 127.0.0.1:57319
+1667940107642	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57320" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileeqUvzR"
+1667940108080	Marionette	INFO	Marionette enabled
+1667940108154	Marionette	INFO	Listening on port 57331
+Read port: 57331
+WebDriver BiDi listening on ws://127.0.0.1:57320
+2022-11-08 21:41:48.324 plugin-container[79182:2560346] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:41:48.325 plugin-container[79182:2560346] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:41:48.391 plugin-container[79182:2560346] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:41:48.391 plugin-container[79182:2560346] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 21:41:48.392 plugin-container[79182:2560344] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 21:41:48.392 plugin-container[79182:2560344] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667940108438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileeqUvzR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57320/devtools/browser/bba46dfc-fdc6-472b-a728-9bcd6918acdc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667940150605	Marionette	INFO	Stopped listening on port 56760
+1667940166434	Marionette	INFO	Stopped listening on port 57331
+1667943460408	geckodriver	INFO	Listening on 127.0.0.1:63989
+1667943460566	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63990" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileMRj2Qv"
+1667943461566	Marionette	INFO	Marionette enabled
+2022-11-08 22:37:41.870 plugin-container[79470:2574865] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:37:41.870 plugin-container[79470:2574865] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667943461876	Marionette	INFO	Listening on port 64006
+Read port: 64006
+WebDriver BiDi listening on ws://127.0.0.1:63990
+1667943462157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 22:37:42.497 plugin-container[79470:2574865] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:37:42.497 plugin-container[79470:2574865] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 22:37:42.497 plugin-container[79470:2574924] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:37:42.498 plugin-container[79470:2574924] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileMRj2Qv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63990/devtools/browser/c5217751-34df-4fec-aba9-cb81be7f088e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667943625310	geckodriver	INFO	Listening on 127.0.0.1:64724
+1667943625477	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64725" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKxL0if"
+1667943626211	Marionette	INFO	Marionette enabled
+1667943626477	Marionette	INFO	Listening on port 64736
+Read port: 64736
+WebDriver BiDi listening on ws://127.0.0.1:64725
+2022-11-08 22:40:26.895 plugin-container[79565:2577496] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:40:26.895 plugin-container[79565:2577496] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667943626930	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 22:40:27.309 plugin-container[79565:2577496] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:40:27.309 plugin-container[79565:2577496] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 22:40:27.310 plugin-container[79565:2577499] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:40:27.310 plugin-container[79565:2577499] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKxL0if/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64725/devtools/browser/598659a5-47d9-41ec-9ae3-67f2e695ca8d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667943655386	Marionette	INFO	Stopped listening on port 64736
+1667943889976	geckodriver	INFO	Listening on 127.0.0.1:49474
+1667943890141	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49475" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilekreUUU"
+1667943890585	Marionette	INFO	Marionette enabled
+1667943890685	Marionette	INFO	Listening on port 49486
+Read port: 49486
+WebDriver BiDi listening on ws://127.0.0.1:49475
+2022-11-08 22:44:50.876 plugin-container[79618:2579446] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:44:50.876 plugin-container[79618:2579446] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1667943890963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-08 22:44:51.380 plugin-container[79618:2579446] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:44:51.380 plugin-container[79618:2579446] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-08 22:44:51.381 plugin-container[79618:2579472] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-08 22:44:51.381 plugin-container[79618:2579472] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilekreUUU/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49475/devtools/browser/7f09f71e-d6f0-4606-b758-e0147c0e7ae0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667943914549	Marionette	INFO	Stopped listening on port 64006
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.windowGlobal4294967299/customhighlighter93, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:48:19\nhide@resource://devtools/client/fronts/highlighters.js:32:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:639:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\nunhighlightNode/<@resource://devtools/client/inspector/boxmodel/actions/box-model-highlighter.js:81:36\nthunk/</</<@resource://devtools/client/shared/redux/middleware/thunk.js:17:11\nonMouseOut@resource://devtools/client/inspector/boxmodel/components/BoxModelMain.js:488:35\ninvokeGuardedCallbackImpl@resource://devtools/client/shared/vendor/react-dom.js:74:10\ninvokeGuardedCallback@resource://devtools/client/shared/vendor/react-dom.js:111:29\ninvokeGuardedCallbackAndCatchFirstError@resource://devtools/client/shared/vendor/react-dom.js:125:25\nexecuteDispatch@resource://devtools/client/shared/vendor/react-dom.js:346:42\nexecuteDispatchesInOrder@resource://devtools/client/shared/vendor/react-dom.js:365:20\nexecuteDispatchesAndRelease@resource://devtools/client/shared/vendor/react-dom.js:462:29\nexecuteDispatchesAndReleaseTopLevel@resource://devtools/client/shared/vendor/react-dom.js:470:10\nforEachAccumulated@resource://devtools/client/shared/vendor/react-dom.js:442:9\nrunEventsInBatch@resource://devtools/client/shared/vendor/react-dom.js:598:21\nrunExtractedEventsInBatch@resource://devtools/client/shared/vendor/react-dom.js:606:19\nhandleTopLevel@resource://devtools/client/shared/vendor/react-dom.js:4272:30\nbatchedUpdates$1@resource://devtools/client/shared/vendor/react-dom.js:15752:12\nbatchedUpdates@resource://devtools/client/shared/vendor/react-dom.js:1882:12\ndispatchEvent@resource://devtools/client/shared/vendor/react-dom.js:4351:19\nflushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:2293:7\nssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:2202:32\ntrigger@resource://gre/modules/AsyncShutdown.jsm:748:23\n_wait@resource://gre/modules/AsyncShutdown.jsm:900:15\nwait@resource://gre/modules/AsyncShutdown.jsm:881:34\nobserve@resource://gre/modules/AsyncShutdown.jsm:558:10\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1667943917432	Marionette	INFO	Stopped listening on port 49486
+1667993438480	geckodriver	INFO	Listening on 127.0.0.1:51157
+1667993438645	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51158" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile8p9Qzj"
+1667993439957	Marionette	INFO	Marionette enabled
+1667993440147	Marionette	INFO	Listening on port 51173
+Read port: 51173
+WebDriver BiDi listening on ws://127.0.0.1:51158
+1667993440465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-09 12:30:40.487 plugin-container[83512:2693405] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:30:40.488 plugin-container[83512:2693405] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-09 12:30:40.970 plugin-container[83512:2693405] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:30:40.971 plugin-container[83512:2693405] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-09 12:30:40.983 plugin-container[83512:2693465] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:30:40.983 plugin-container[83512:2693465] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile8p9Qzj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51158/devtools/browser/d7511cde-cc1d-4485-8405-2da76a2c58bf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667993479238	Marionette	INFO	Stopped listening on port 51173
+1667993658731	geckodriver	INFO	Listening on 127.0.0.1:52209
+1667993658864	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52210" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileBpZuWL"
+1667993659841	Marionette	INFO	Marionette enabled
+1667993659973	Marionette	INFO	Listening on port 52221
+Read port: 52221
+WebDriver BiDi listening on ws://127.0.0.1:52210
+1667993660281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-09 12:34:20.364 plugin-container[83580:2695542] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:34:20.364 plugin-container[83580:2695542] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-09 12:34:20.864 plugin-container[83580:2695542] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:34:20.864 plugin-container[83580:2695542] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-09 12:34:20.865 plugin-container[83580:2695602] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 12:34:20.865 plugin-container[83580:2695602] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileBpZuWL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52210/devtools/browser/ac443f79-858a-424c-8af7-e65e5ea1a2a6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1667993705887	Marionette	INFO	Stopped listening on port 52221

@@ -1,0 +1,52 @@
+Question 1: What are the main features of python?
+
+1. Easy to learn
+2. Easy readability
+3. Has its own interpreter preinstalled when python is installed
+4. Its a dynamically typed language
+5. Makes use of white spaces to represent lines of code
+6. It makes use of virtual machines
+7. Contains libraries
+8. Open source and free
+9. It uses object oriented programming
+10. Its a high level language
+
+Question 2: What is the difference between a list and a dictionary?
+A list is used to store a number of items under the same variable. It is similar to arrays in Javascript
+Example:
+ fruit = [Apple, Mango, carrot]
+Dictionary is a set of key-value pair. It is similar to Objects in Javascript
+Example:
+ person = {
+ "name" : "Bello",
+ "age" : 12,
+ "sex" : "Male"
+ }
+
+ Question 3: In your words, explain the keyword pass
+ Pass is used in python in place of the code block for functions. This is because python does not allow empty functions i.e running a function without logic(code block)
+
+ Question 4: What is an iterator in Python?
+ An iteration is also known as loops which represents repeatedly running same logic or code.
+ Iterations are achieved using for or while loops and can be used along with operators like if, elif, else wtc
+
+ Question 5: What is unit testing?
+ Unit test is he process of testing the smallest, testable part of an application
+ Can be manual or automated using unit testing frameworks
+ Eg of unit testing frameworks are:
+ Pytest: Used for functional testing,
+ Unittest: Contains defined test cases,
+
+ Question 6: Of the available unit test framework in Python, which is yourfavorite and wh
+ Unittest, reason is that it comes preinstalled with python
+
+ Question 7: Name the types of arguments in Python
+
+ Question 8: Explain what functions are.
+
+ Question 9: How do you create a class in Python?
+
+ Question 10: Explain what polymorphism and Inheritance are in Python OOP
+
+
+
