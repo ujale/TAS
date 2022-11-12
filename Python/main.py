@@ -210,7 +210,7 @@ print("\nLesson 9: Functions\n")
 # Built in functions: These are functions that come predefined with python library. Eg print, len, min, max
 # UDF: functions created by users to perform a particular logic in the program and are denoted using 'def' keyword
 # Anonymous: These are user define functions that are not declared using the def keyword & dont have a name. They are AKA lambda
-# structure of function is: def <function keyword> (<parameters>)
+# structure of function is: def <function name> (<parameters>)
 # python does not allow for empty functions (with no code or logic under). Instead ypu can use 'pass' as code block
 
 def name():
@@ -251,7 +251,7 @@ accept(lambda x: "Hello All")   # use c) function inside a function
 print("\nLesson 11: Functions- Argument & return statements\n")
 # parameters = the variables defined within the () of a function
 # argument = the values passed into the function
-# 5 types of arguments in python are: required, default, keyword, arbitrary, arbitrary keyword
+# 5 types of arguments in python are: required, default, keyword, arbitrary/variadic, arbitrary keyword
 print("\n Required Argument\n")  # the order of the arguments and parameter matter
 def add(num1,num2):
     print(num1+num2)
@@ -720,7 +720,7 @@ plane.check_type()
 print("\n Lesson 20: OOP: Inheritance\n")
 # 4 principles of OOP in python are: Inheritance, Polymorphism, Encapsulation, Data Abstraction
 # Inheritance: ability of a class to inherit objects, attributes & methods from another class
-# Polymorphism: ability for a method to perform any function/logic
+# Polymorphism: ability for a method to perform different function/logic/tasks
 # Encapsulation: ability to hide some data and only expose data you need
 # Data Abstraction: allows us to have attributes & core logic to be in the class while exposing only the method to the user
 # Base class/parent class (class that gives the properties) ---> derived/child class (class that recieves the properties)
@@ -744,14 +744,14 @@ class Plane(Vehicle):
     model = "Aeroplane"         # We assigned another value to the attributes in vehicle (make & model)
     make = "Boeing"
 
-vehicle1 = Vehicle()
-vehicle1.print_vehicle_info()
+vehicle = Vehicle()
+vehicle.print_vehicle_info()
 
-car1 = Car("Toyota", "Camry")
-car1.print_vehicle_info()
+car = Car("Toyota", "Camry")
+car.print_vehicle_info()
 
-plane1 = Plane()
-plane1.print_vehicle_info()
+plane = Plane()
+plane.print_vehicle_info()
 
 
 print("\nLesson 21: Polymorphism")
@@ -785,7 +785,7 @@ submarine = Submarine()
 submarine.drive_direction()
 
 print("\n Lesson 22: Encapsulation")
-# Idea pf enclosing info in a class and exposing only selected info.
+# Idea of enclosing info in a class and exposing only selected info.
 # This puts a restriction on accessing attributes and methods which can lead to accidental manipulation of data
 # we use __ infront of an attribute to denote a private attribute
 
@@ -946,7 +946,7 @@ print("6 / 3 = ", Calculator.divide(6,3))
 
 
 print("\n Lesson 26: Unit test")
-# Unit test is he process of testing the smallest, testable part of an application
+# Unit test is the process of testing the smallest, testable part of an application
 # Can be manual or automated using unit testing frameworks
 # Eg of unit testing frameworks are:
 # Pytest: Used for functional testing,
@@ -965,7 +965,7 @@ print("\n To install PyTest for python version 3, use the following command on t
 print("\n To check the version of pytest installed:\n python3 -m pytest --version")
 
 print("\nWriting test cases in pytest")
-# Any file that begins with test_ is regarded as a test file while any function that beginngs with test_
+# Any file that begins with test_ is regarded as a test file while any function that begins with test_
 # is a test case
 # Example is the test_bodmas_pytest.py test file that imports the bodmas.py test. Different assertions are
 # contained in the test_bodmas_pytest.py file
@@ -977,7 +977,7 @@ print("\nLesson 28: Unittest")
 # To use unit test just import your unittest model and then define your test class by extending it with
 # unittest.TestCase
 
-print("\nTo run the test cases in unittest type this command in terminal: <python3 -m unittest")
+print("\nTo run the test cases in unittest, type this command in terminal: <python3 -m unittest")
 # Example is the test_bodmas_unittest.py test file that imports the bodmas.py test and the in-built unittest library
 # The assertions used are from the in-built unittest library
 

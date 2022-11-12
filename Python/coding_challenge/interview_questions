@@ -41,12 +41,30 @@ Example:
  Unittest, reason is that it comes preinstalled with python
 
  Question 7: Name the types of arguments in Python
+ 5 types of arguments in python are:
+ Required Argument
+ Default Argument
+ Keyword Argument
+ Arbitrary/Variadic Argument
+ Arbitrary keyword Argument
+
 
  Question 8: Explain what functions are.
+ Functions are reuseable blocks of code that can be called (invoked) at any point in the program.
+ They are 3 types of functions:
+1. Built in functions: These are functions that come predefined with python library. Eg print, len, min, max
+2. User Defined Functions: functions created by users to perform a particular logic in the program and are denoted using 'def' keyword
+3. Anonymous: These are user define functions that are not declared using the def keyword & dont have a name. They are also known as lambda
+An example of the structure of a function is:
+def <function name> (<parameters>)
 
  Question 9: How do you create a class in Python?
+ Class is one of the 4 building blocks of Object Oriented Programming, the others being (Objects, Attributes and Methods).
+ Classes are used to structure code into reuseable components that contains properties describing an entity.
+ Classes contain attributes and methods also individual objects are created from a class
 
  Question 10: Explain what polymorphism and Inheritance are in Python OOP
-
+ Polymorphism is the ability for a class method to perform different function/logic/task
+ Inheritance is the ability of a class to inherit objects, attributes & methods from another class
 
 

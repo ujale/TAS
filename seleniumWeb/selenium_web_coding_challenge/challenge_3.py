@@ -18,7 +18,7 @@ def main():
     print("Current Temperature: ", temp.text)
     morning = driver.find_element(By.XPATH, '//*[@id="WxuTodayWeatherCard-main-486ce56c-74e0-4152-bd76-7aea8e98520a"]/section/div/ul/li[1]/a/div[1]/span')
     print("Morning temperature is :", morning.text)
-    afternoon = driver.find_element(By.CSS_SELECTOR, '#WxuTodayWeatherCard-main-486ce56c-74e0-4152-bd76-7aea8e98520a > section > div > ul > li.Column--column--1p659.Column--active--3vpgg > a > div.Column--temp--5hqI_ > span')
+    afternoon = driver.find_element(By.XPATH, '//*[@id="WxuTodayWeatherCard-main-486ce56c-74e0-4152-bd76-7aea8e98520a"]/section/div/ul/li[2]/a/div[1]/span')
     print("Afternoon temperature is :", afternoon.text)
     evening = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[2]/main/div[3]/section/div/ul/li[3]/a/div[1]/span')
     print("Evening temperature is :", evening.text)

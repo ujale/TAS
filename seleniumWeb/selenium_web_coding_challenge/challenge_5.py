@@ -16,9 +16,10 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def comment_is_visible(driver):
     web_driver_wait = WebDriverWait(driver, 20)
-    web_driver_wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "About us")))
-    about_us_link = driver.find_element(By.LINK_TEXT, "About us")
-    about_us_link.click()
+    web_driver_wait.until(EC.visibility_of_element_located((By.XPATH, '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[2]/ytd-comments/ytd-item-section-renderer')))
+    first_comment = driver.find_element(By.XPATH, '//*[@id="main"]')
+    first_comment_text = first_comment.find_element(By.XPATH, '//*[@id="comment-content"]')
+    print("First comment", first_comment_text.text)
     time.sleep(5)
 
 
@@ -31,6 +32,7 @@ def main():
     driver.find_element(By.ID, "search-input").click()
     driver.find_element(By.XPATH, '//*[@id="video-title"]').click()
     #send_keys_element(driver.find_element(By.ID, "search-input"), "Adonai Nathaniel Bassey")
+    comment_is_visible(driver)
     time.sleep(20)
 
 

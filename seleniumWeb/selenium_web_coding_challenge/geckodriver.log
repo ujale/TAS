@@ -442,3 +442,98 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:52210/devtools/browser/ac443f79-858a-424c-8af7-e65e5ea1a2a6
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
 1667993705887	Marionette	INFO	Stopped listening on port 52221
+1668096473641	geckodriver	INFO	Listening on 127.0.0.1:63649
+1668096473795	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63650" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileXCqzsH"
+1668096474797	Marionette	INFO	Marionette enabled
+1668096475340	Marionette	INFO	Listening on port 63665
+Read port: 63665
+2022-11-10 17:07:55.432 plugin-container[95731:3120301] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:07:55.486 plugin-container[95731:3120301] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:63650
+1668096475707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-10 17:07:56.661 plugin-container[95731:3120301] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:07:56.681 plugin-container[95731:3120301] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-10 17:07:56.682 plugin-container[95731:3120307] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:07:56.682 plugin-container[95731:3120307] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileXCqzsH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63650/devtools/browser/5c720202-da46-41db-87e7-c3f2eb2ed5bd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.sys.mjs", 387))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:98:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:187:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:731:32
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:777:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:658:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 98, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 98))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1039:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:579:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:688:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1039, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1039))
+Handler function _httpStopRequest threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:98:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:187:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:731:32
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:365:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 98, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 98))
+1668096527202	Marionette	INFO	Stopped listening on port 63665
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668096698349	geckodriver	INFO	Listening on 127.0.0.1:64710
+1668096698496	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64711" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileOC1E2I"
+1668096699511	Marionette	INFO	Marionette enabled
+1668096699929	Marionette	INFO	Listening on port 64726
+Read port: 64726
+2022-11-10 17:11:40.084 plugin-container[95887:3124043] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:11:40.085 plugin-container[95887:3124043] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:64711
+1668096700246	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-10 17:11:40.602 plugin-container[95887:3124043] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:11:40.607 plugin-container[95887:3124043] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-10 17:11:40.608 plugin-container[95887:3124041] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:11:40.608 plugin-container[95887:3124041] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileOC1E2I/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64711/devtools/browser/48b4c733-ad8e-4809-85b8-3f175ab7f6bf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1668096713259	Marionette	INFO	Stopped listening on port 64726
+1668096851800	geckodriver	INFO	Listening on 127.0.0.1:65457
+1668096851975	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65458" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilelys2o5"
+1668096853008	Marionette	INFO	Marionette enabled
+1668096853358	Marionette	INFO	Listening on port 65473
+Read port: 65473
+WebDriver BiDi listening on ws://127.0.0.1:65458
+1668096853656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-10 17:14:13.739 plugin-container[96020:3127037] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:14:13.739 plugin-container[96020:3127037] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-10 17:14:13.995 plugin-container[96020:3127037] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:14:13.995 plugin-container[96020:3127037] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-10 17:14:13.995 plugin-container[96020:3127100] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:14:13.996 plugin-container[96020:3127100] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofilelys2o5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65458/devtools/browser/d307055a-8603-4612-a7d3-4004809f331b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1668097117860	geckodriver	INFO	Listening on 127.0.0.1:50279
+1668097118003	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50280" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile2LLDUp"
+1668097118991	Marionette	INFO	Marionette enabled
+2022-11-10 17:18:39.344 plugin-container[96118:3129717] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:18:39.345 plugin-container[96118:3129717] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1668097119369	Marionette	INFO	Listening on port 50297
+Read port: 50297
+WebDriver BiDi listening on ws://127.0.0.1:50280
+1668097119646	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-10 17:18:39.928 plugin-container[96118:3129717] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:18:39.928 plugin-container[96118:3129717] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-10 17:18:39.928 plugin-container[96118:3129848] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-10 17:18:39.928 plugin-container[96118:3129848] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile2LLDUp/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50280/devtools/browser/7eef3cc0-254a-449b-86e2-bd5d18756f9a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1668097138548	Marionette	INFO	Stopped listening on port 65473
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668097141943	Marionette	INFO	Stopped listening on port 50297
