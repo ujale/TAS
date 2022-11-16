@@ -8,10 +8,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def top_news(driver):
-    news_title = driver.find_elements(By.CLASS_NAME, 'media-list__item media-list__item--1')
-    print("total news headlines on home page: ", news_title)
+    news_headlines = driver.find_elements(By.CLASS_NAME, 'media__link')
+    #news_headlines_title = news_headlines.find_element(By.TAG_NAME, 'a')
+    print("total news headlines on home page: ", len(news_headlines), news_headlines.innerText)
+    #print("total news headline titles on home page: ", news_headlines_title)
     #for news_headline in news_headlines:
     #    print("The news headlines are:", news_headline.text)
+
+
 
 
 def main():

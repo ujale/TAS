@@ -1,10 +1,11 @@
 Question 1: What are the main features of python?
 
 1. Easy to learn
-2. Easy readability
-3. Has its own interpreter preinstalled when python is installed
-4. Its a dynamically typed language
-5. Makes use of white spaces to represent lines of code
+2. Prioritizes code readability
+3. Has its own interpreter which is preinstalled when python is installed. Python is interpreted meaning the
+python source code is converted to byte code that is executed by the python virtual machine
+4. Its a dynamically typed language meaning python does not assign a type to the value until at runtime
+5. Makes use of white spaces to represent blocks of code
 6. It makes use of virtual machines
 7. Contains libraries
 8. Open source and free

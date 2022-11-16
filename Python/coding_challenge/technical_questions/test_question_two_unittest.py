@@ -1,4 +1,4 @@
-from Python.coding_challenge.technical_questions.unit_testing import question2
+from Python.coding_challenge.technical_questions import question2
 import unittest
 
 

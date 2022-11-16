@@ -1,4 +1,21 @@
+print("\nLesson1: Intro to python")
+# Visit https://www.python.org/downloads/
+# select the latest version of python & download the corresponding binaries for your OS.
+# Follow installation prompt.
+# Set python to path
 
+# To install python on mac run the command <brew install python3> in your terminal
+
+#Installing pycharm
+# Visit https://www.jetbrains.com/pycharm/download
+# Select the OS & download community version
+
+print("\nLesson2: Datatypes & variables\n")
+
+# Use # for single line commenting &
+"""
+Use this for Multiline commenting
+"""
 
 print("\nLesson3: String & concatenation\n")
 
@@ -99,10 +116,46 @@ else:
 
 print("\nlesson 6: Conditional and logical operators\n")
 print("\nLogical operators are \n: and , or, not")
+# if condition 1 and condition 2 are true:
+    # code block is executed
+
+# if condition 1 or condition 2 are true:
+    # code block is executed
+
+# if not condition 4:
+    # code block is executed
+
+number1 = 10
+number2 =20
+
+if number1 == 10 and number2 == 20:
+    print("\nNumber 1 is 10 and number2 is 20")
+
+if number1 == 5 and number2 == 20:              # Will not be executed
+    print("Number 1 is 10 and number2 is 20")
+
+if number1 == 5 or number2 == 20:
+    print("\nNumber 1 may be 10 and number2 may be 20")
+
+if not number1 == 10:               # Will not be executed since number1 is truly equal to 10
+    print("NOT: Number 1 is 10")
+
+if not number1 == 5:               # Will be executed since number1 is 5 which is not equal to 10
+    print("\nNOT: Number 1 is not 10")
 
 print("\nlesson 7: Loops( For and while loops)\n")
-
 print('\nFor loop')
+# The syntax of For loop when iterating in sequence is:
+"""for <variable> in <sequence>:
+    Block of code
+"""
+
+# The syntax of For loop when iterating number is:
+"""for <variable> in range(number):
+    Block of code
+"""
+# Note: 'range' is a built in keyword in python
+
 # iterate sequence
 fruits = ["Apples", "Mango", "pear"]
 for fruit in fruits:
@@ -118,7 +171,10 @@ number = 5
 for i in range(number):
     print("number", i)
 
-
+# The syntax of While loop is:
+"""while <condition>:
+    Block of code
+"""
 # while loop
 print("\n While loop\n")
 number = 10
@@ -210,7 +266,9 @@ print("\nLesson 9: Functions\n")
 # Built in functions: These are functions that come predefined with python library. Eg print, len, min, max
 # UDF: functions created by users to perform a particular logic in the program and are denoted using 'def' keyword
 # Anonymous: These are user define functions that are not declared using the def keyword & dont have a name. They are AKA lambda
-# structure of function is: def <function name> (<parameters>)
+# structure of function is:
+# def <function name> (<parameters>):
+    #block of code
 # python does not allow for empty functions (with no code or logic under). Instead ypu can use 'pass' as code block
 
 def name():
@@ -236,8 +294,21 @@ login_test()
 
 
 print("\nLesson 10: Anonymous functions\n")
-# Also called lambda, its used when a) function has short lifespan, b)function has 1 expression c)function is to be passed into another function
+# These are functions defined without a name. Also called lambda, its used when:
+# a) function has short lifespan,
+# b)function has 1 expression
+# c)function is to be passed into another function
 # structure of anonymous function is lambda: code block
+
+def greet():                # This is a normal way to write a function (UDF)
+    print("Hello world")
+
+lambda: print("Hello World Anonymously. \nThat is the function does not have the keyword 'def")
+# To invoke an anonymous function, we need to assign a variable to it. eg hello. Therefor,
+hello = lambda: print("Hello World Anonymously. \nThat is, this function does not have the keyword 'def")
+
+greet() #this is to invoke a normal UDF
+hello() #this is to invoke the anonymous function
 
 greet = lambda: print("Hello World Anonymous")
 def accept(cb):
@@ -245,7 +316,7 @@ def accept(cb):
 
 
 greet()   # use b) function has 1 expression
-accept(lambda x: "Hello All")   # use c) function inside a function
+accept(lambda x: print(x))   # use c) function inside a function
 
 
 print("\nLesson 11: Functions- Argument & return statements\n")
@@ -901,7 +972,7 @@ print("\n Lesson 25: OOP Static Methods\n")
 # We dont need to add 'self' when using static methods
 # Static methods do not require the initialization of class like the methods we have been working on so far
 # static methods are created in 2 ways:
-# a) Using built-in staticmethod() function The syntax is classname.functionname = staticmethod(lassname.functionname)
+# a) Using built-in staticmethod() function The syntax is classname.functionname = staticmethod(classname.functionname)
 # b) Using @staticmethod annotation
 
 #print("Using staticmethod() function")
