@@ -73,7 +73,7 @@ Types of locators are:
 3. Class
 4. Tag Name
 5. Css Selector: This is advisable for use when there is no ID or class name for the the element or where the ID or class name changes with each load i.e dynamic. 
-6. XPath: This is advisable for use when there is no ID or class name for the the element or where the ID or class name changes with each load i.e dynamic. We can use either the Xpath or Full Xpath when rightclick and copy them from the website's dev tools element page
+6. XPath: This is advisable for use when there is no ID or class name for the element or where the ID or class name changes with each load i.e dynamic. We can use either the Xpath or Full Xpath when rightclick and copy them from the website's dev tools element page
 7. Link Text: These usually contain the 'a' tag in them and href i.e <a >. What we copy is the content of the link
 8. Partial Link Text
 
@@ -125,3 +125,10 @@ element_attribute_to_include
 
 Alternatively, you can use the time package in python to wait for X secs before performing an event = implicit wait
 Its advised to refrain from use of time.sleep() (which is python's time package)
+
+
+# Lesson 21: Javascript Execution
+Selenium allows for JS execution on webpages by invoking execute_script method in the driver class
+
+# Lesson 22: Page Object Model
+POM is a design pattern used to create an object used to store web elements used on a webpage

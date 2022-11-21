@@ -30,7 +30,7 @@ def main():
     send_keys_element(driver.find_element(By.NAME, "lastname"), "kun")
     send_keys_element(driver.find_element(By.NAME, "email"), "com")
     # send_keys_element(driver.find_element(By.NAME, "phone"), "6")
-    send_keys_element(driver.find_element(By.NAME, "phone"), Keys.CONTROL, "v")  # this represents control+v i.e paste
+    send_keys_element(driver.find_element(By.NAME, "phone"), Keys.COMMAND, "v")  # this represents control+v i.e paste
     time.sleep(10)
 
 

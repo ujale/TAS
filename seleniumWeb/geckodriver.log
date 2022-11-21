@@ -350,3 +350,19 @@ WebDriver BiDi listening on ws://127.0.0.1:53545
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofile8go6h0/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:53545/devtools/browser/8567683d-2f9a-4189-9925-d3f1368a45b7
 1666973214488	Marionette	INFO	Stopped listening on port 53561
+1668013979538	geckodriver	INFO	Listening on 127.0.0.1:52890
+1668013979705	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52891" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiledVY3yK"
+1668013980588	Marionette	INFO	Marionette enabled
+1668013980897	Marionette	INFO	Listening on port 52902
+2022-11-09 18:13:00.884 plugin-container[87544:2813840] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 18:13:00.923 plugin-container[87544:2813840] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 52902
+WebDriver BiDi listening on ws://127.0.0.1:52891
+1668013981215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-09 18:13:01.585 plugin-container[87544:2813840] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 18:13:01.585 plugin-container[87544:2813840] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-09 18:13:01.586 plugin-container[87544:2813843] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-09 18:13:01.586 plugin-container[87544:2813843] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofiledVY3yK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52891/devtools/browser/bb97ff41-50d0-4a62-9698-39d16d97a6e2
+1668013985669	Marionette	INFO	Stopped listening on port 52902
