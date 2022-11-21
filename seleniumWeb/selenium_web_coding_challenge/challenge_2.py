@@ -17,12 +17,11 @@ def main():
     search_field = driver.find_element(By.NAME, "q")
     search_field.send_keys("Python")
     search_field.submit()
-    wiki_text = driver.find_element(By.CSS_SELECTOR, '.kno-rdesc > span:nth-child(2)')
-    #print("Wikipedia text on python search: ", wiki_text.text)
-    #right_pane = driver.find_element(By.XPATH, '//*[@id="rhs"]')
+    time.sleep(10)
+    wiki_text = driver.find_element(By.XPATH, '/html/body/div[7]/div/div[11]/div[2]/div/div/div[2]/div/div[5]/div/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div/div/div')
     print("Wikipedia text on python search: ", wiki_text.text)
     time.sleep(5)
-    driver.quit()
+    driver.close()
 
 
 if __name__ == '__main__':

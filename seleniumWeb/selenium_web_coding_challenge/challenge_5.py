@@ -18,9 +18,13 @@ def comment_is_visible(driver):
     web_driver_wait = WebDriverWait(driver, 40)
     web_driver_wait.until(EC.visibility_of_element_located((By.TAG_NAME, 'ytd-comment-renderer')))
     comments = driver.find_elements(By.TAG_NAME, "ytd-comment-renderer")
+    index = 0
     for comment in comments:
+        if index >= 2:
+            break
         comment_info = comment.find_element(By.ID, 'content-text')
         print(comment_info.text)
+        index += 1
     time.sleep(5)
 
 

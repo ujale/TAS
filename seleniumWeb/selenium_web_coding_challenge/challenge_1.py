@@ -1,4 +1,4 @@
-#1.    Using    the    chrome    browser    navigate    to https://www.facebook.com/
+#1. Using    the    chrome    browser    navigate    to https://www.facebook.com/
 # fill  in  the  email/phone  and password text box then click the Login Button.
 import time
 
@@ -15,7 +15,10 @@ def facebook_login(driver):
     driver.find_element(By.NAME, 'pass').send_keys("P@ssw0rd")
     driver.find_element(By.XPATH,
                         '/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button').click()
-    time.sleep(10)
+    time.sleep(30)
+    assert driver.find_element(By.ID, "email").text == "timby@qa.team"
+    #form_element = driver.find_element(By.XPATH, '//form[@data-testid="royal_login_form"]')
+    #print(form_element)
 
 
 def main():
