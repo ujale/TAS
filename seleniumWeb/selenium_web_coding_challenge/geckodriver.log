@@ -1281,3 +1281,26 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 2022-11-19 17:01:50.579 plugin-container[39174:4745505] nil host used in call to allowsSpecificHTTPSCertificateForHost
 2022-11-19 17:01:50.579 plugin-container[39174:4745505] nil host used in call to allowsAnyHTTPSCertificateForHost:
 1668877321062	Marionette	INFO	Stopped listening on port 51597
+1669148871397	geckodriver	INFO	Listening on 127.0.0.1:50098
+1669148871552	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50099" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKLa76i"
+1669148872614	Marionette	INFO	Marionette enabled
+2022-11-22 21:27:53.055 plugin-container[59810:5180328] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 21:27:53.105 plugin-container[59810:5180328] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1669148873280	Marionette	INFO	Listening on port 50114
+Read port: 50114
+WebDriver BiDi listening on ws://127.0.0.1:50099
+1669148873859	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-11-22 21:27:54.368 plugin-container[59810:5180328] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 21:27:54.368 plugin-container[59810:5180328] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-22 21:27:54.368 plugin-container[59810:5180336] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 21:27:54.368 plugin-container[59810:5180336] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/s4/792m46m109x14pqrd33m3kwh0000gn/T/rust_mozprofileKLa76i/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50099/devtools/browser/8ec3a4d4-2328-42ef-9f51-74b15ec10a26
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+2022-11-22 20:28:06.962 plugin-container[59841:5181196] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 20:28:06.962 plugin-container[59841:5181196] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-22 20:28:06.981 plugin-container[59841:5181196] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 20:28:06.981 plugin-container[59841:5181196] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-11-22 20:28:06.981 plugin-container[59841:5181197] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-11-22 20:28:06.981 plugin-container[59841:5181197] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1669148896120	Marionette	INFO	Stopped listening on port 50114
