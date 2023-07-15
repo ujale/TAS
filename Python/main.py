@@ -655,7 +655,7 @@ print(animals)
 print("\n Lesson 17: Object Oriented Programming- OOP")
 # OOP is a programming paradigm that relies on classes and objects
 # Its used to structure code into reuseable components which are called classes
-# the building blocks of OOP:COAM classes, objects, attributes, methods
+# the building blocks  of OOP:COAM classes, objects, attributes, methods
 # Classes contain attributes and methods, individual objects are created from a class
 # The first parameter in a method in python is called 'self'
 # eg
