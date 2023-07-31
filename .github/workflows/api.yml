@@ -14,7 +14,7 @@ jobs:
           cd module3B_API
           npm install
           npm install -g newman
-          npm install -g newman-reporter-csv –save-dev
+          npm install -g newman-reporter-csv --save-dev
           npm install -g newman-reporter-allure
           npm install -g newman-reporter-html
           npm install -g newman-reporter-htmlextra
