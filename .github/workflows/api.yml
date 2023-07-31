@@ -1,0 +1,25 @@
+name: API Tasks
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs: 
+  API:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          cd module3
+          cd module3B_API
+          npm install
+          npm install -g newman
+          npm install -g newman-reporter-csv –save-dev
+          npm install -g newman-reporter-allure
+          npm install -g newman-reporter-html
+          npm install -g newman-reporter-htmlextra
+          newman run Brevo.collection.json -e Sendinblue.env.json -r csv
+          newman run Brevo.collection.json -e Sendinblue.env.json -r html
+          newman run Brevo.collection.json -e Sendinblue.env.json -r htmlextra
+          newman run Brevo.collection.json -e Sendinblue.env.json -r allure
+          newman run Brevo.collection.json -e Sendinblue.env.json -r cli,json,junit,progress,emojitrain
