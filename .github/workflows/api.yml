@@ -18,8 +18,8 @@ jobs:
           npm install -g newman-reporter-allure
           npm install -g newman-reporter-html
           npm install -g newman-reporter-htmlextra
-          newman run Brevo.collection.json -e Sendinblue.env.json -r csv
-          newman run Brevo.collection.json -e Sendinblue.env.json -r html
-          newman run Brevo.collection.json -e Sendinblue.env.json -r htmlextra
-          newman run Brevo.collection.json -e Sendinblue.env.json -r allure
-          newman run Brevo.collection.json -e Sendinblue.env.json -r cli,json,junit,progress,emojitrain
+          newman run API.collection.json -e Testify.env.json -r csv
+          newman run API.collection.json -e Testify.env.json -r html
+          newman run API.collection.json -e Testify.env.json -r htmlextra
+          newman run API.collection.json -e Testify.env.json -r allure
+          newman run API.collection.json -e Testify.env.json -r cli,json,junit,progress,emojitrain
