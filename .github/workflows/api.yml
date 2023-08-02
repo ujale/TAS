@@ -9,6 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      # Install Node on the runner
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      # Install the newman, and its associated reporters (csv, allure, html & htmlextra)
+      - name: Install newman and run tests    
       - run: |
           cd module3
           cd module3B_API
@@ -18,8 +27,25 @@ jobs:
           npm install -g newman-reporter-allure
           npm install -g newman-reporter-html
           npm install -g newman-reporter-htmlextra
+
+      # Create directory for upload of reports
+      - name: Make directory for result
+        run: mkdir -p testReport
+
+     # Run the API collection in console
+      - name: Run collection
+      - run: |
           newman run API.collection.json -e Testify.env.json -r csv
           newman run API.collection.json -e Testify.env.json -r html
           newman run API.collection.json -e Testify.env.json -r htmlextra
           newman run API.collection.json -e Testify.env.json -r allure
           newman run API.collection.json -e Testify.env.json -r cli,json,junit,progress,emojitrain
+
+
+     # Upload the contents of Test Results directory to workspace
+      - name: Output the run Details
+        uses: actions/upload-artifact@v2
+        with:
+          name: RunReports
+          path: testReport
+     
