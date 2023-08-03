@@ -33,7 +33,7 @@ jobs:
       - name: Make a directory for the result
         run: mkdir -p testReport
 
-     # Run the API collection in console
+      # Run the API collection in console
       - name: Run collection
       - run: |
           newman run API.collection.json -e Testify.env.json -r csv
@@ -43,7 +43,7 @@ jobs:
           newman run API.collection.json -e Testify.env.json -r cli,json,junit,progress,emojitrain
 
 
-     # Upload the contents of Test Results directory to workspace
+      # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         uses: actions/upload-artifact@v3
         with:
