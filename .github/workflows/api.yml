@@ -8,16 +8,17 @@ jobs:
   API:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
       
       # Install Node on the runner
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
 
-      # Install the newman, and its associated reporters (csv, allure, html & htmlextra)
-      - name: Install newman and run tests    
+      # Install Newman, and its associated reporters (csv, allure, html & htmlextra)
+      - name: Install Newman and run tests    
       - run: |
           cd module3
           cd module3B_API
@@ -28,8 +29,8 @@ jobs:
           npm install -g newman-reporter-html
           npm install -g newman-reporter-htmlextra
 
-      # Create directory for upload of reports
-      - name: Make directory for result
+      # Create a directory for the upload of reports
+      - name: Make a directory for the result
         run: mkdir -p testReport
 
      # Run the API collection in console
@@ -44,7 +45,7 @@ jobs:
 
      # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: RunReports
           path: testReport
