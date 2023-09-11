@@ -129,8 +129,164 @@ public class Task7 {
         doubleDimension [0] [1] = 30;
 
         System.out.println(Arrays.deepToString(doubleDimension));
-
         
     }
 }
 
+
+## Lesson 8: Scanner Class 
+Scanner class is used to read Java user input of primitive datatype like double, string, int,etc. To create an object in the scanner class we use the predefined object 'System.in'.
+To read numerical values of a certain data type, the function to be used is nextDT()
+So for next integer use: nextInt()
+for strings : nextLine()
+
+public class Lesson8 {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Welcome. Kindly enter your year of birth.");
+        short dob = userInput.nextShort();
+        short presentYear = 2023;
+        int customerAge = presentYear - dob;
+        System.out.println("You are " + customerAge + "years old");
+
+        if (customerAge < 18) {
+        System.out.println("You are too young to bet");
+        } else if(customerAge >= 18){
+        System.out.println("Welcome! You are qualified");
+        }
+
+    }
+
+}
+## Lesson 9A: Loops
+Used to execute statements repeatedly until boolean is false. 
+Types of loops are for loop (fixed iterations), while loop(non-fixed iterations), do-While loop(non-fixed iterations).
+
+For loop has 2 syntax. 
+syntax 1 is: for(initializing statement;testing condition;increment/decrement){
+    //code to be executed
+}
+Syntax 2 which is used for the for each loop:
+for (<datatype> <variable name>:<collectionname>){
+    //statements:
+}
+Example 
+
+public class Lesson9A {
+    public static void main(String[] args) {
+        // for increment
+        for (int i = 0; i < 10; i ++){
+            System.out.println("Student " + i);
+        }
+
+
+        // for decrement
+        for (int i = 10; i > 0; i --){
+            System.out.println("Student " + i);
+        }
+    }
+}
+
+## Lesson 9B: While & do-while loop
+
+while loop is recommended when loop count is not fixed
+do-while is recommended when the loop is to run at least once
+
+public class Lesson9B {
+    public static void main(String[] args) {
+        // // while loop
+        // Scanner scanner = new Scanner(System.in);
+        // String userInput = "";
+
+        // while(!userInput.equalsIgnoreCase("exit")){
+        //     System.out.println("Welcome! type \"exit\" to exit this loop");
+        //     userInput = scanner.nextLine();
+        // }
+
+        // //while loop with continue & break statement
+        // Scanner scanner = new Scanner(System.in);
+        // String userInput = "";
+
+        // while(true){
+        //     if(!userInput.equalsIgnoreCase("exit")){
+        //     System.out.println("Welcome! type \"exit\" to exit this loop");
+        //     userInput = scanner.nextLine();
+        //     continue;
+        //     }else if(userInput.equalsIgnoreCase("exit")){
+        //         System.out.println("You are out of the loop");
+        //         break;
+        //     }
+        // }
+
+        String userInput;
+        // do while loop
+        do{
+            System.out.println("Welcome! type \"exit\" to exit this loop");
+            Scanner scanner = new Scanner(System.in);
+            userInput = scanner.nextLine();
+        } while(!userInput.equalsIgnoreCase("exit"));
+    }
+}
+
+## Lesson 10: Java Methods
+A method is a block of statement that has a name and return value.
+It can be executed by calling (aka invoking)it from other places in the program
+or by using annotations like in webautomation using TestNG.
+
+There are 2 types of methods:
+- Predefined methods: these are methods that are already defined in java class libraries
+They are also known as in-built methods or standard library methods. 
+eg length(), equals(), sqrt(), compareTo() etc
+- User defined methods: method written by the programmer 
+
+Structure of a method is: <access modifier> <return type> <name of the method>
+(parameters){
+    code to be executed
+}
+
+eg <access modifier> eg public   
+<return type> eg void
+<name of the method> eg main
+(parameters) eg (String[] args)
+
+public void myFullName (){
+    System.out.println("My name is Shakespear");
+}
+
+public void myAge (){
+    System.out.println("I am 10 years old");
+}
+
+- methods start with small letters while classes start with capital letter
+- In the main method, you need to create a method of the class to be able to access the properties of the class 
+- Some methods do not have return values and so we use void to denote those. eg 
+package Task;
+
+
+public class Lesson10 {
+    public static void main(String[] args) {
+        //To access the properties of a class, we create an object of the class
+
+        Task10 methodVar = new Task10();
+        methodVar.printName();  // Invoke the method printName
+        methodVar.myAge();     // Invoke the method printName
+        int userAge = methodVar.ageCalculator(2000, 2023);
+        System.out.println(userAge);
+        
+    }
+
+    public void printName(){
+        System.out.println("My name is Shakepeare");
+    }
+
+    public void myAge(){
+        System.out.println("I am 10 years old");
+    }
+    public int ageCalculator(int dob, int presentYear){
+        int age = presentYear - dob ;
+        return age;
+    }
+}
+
+- Methods with return values will make use of parameters to pass dynamic values and the keyword return. For such methods no return type of 'void' is not used 
+eg the ageCalculator method above
