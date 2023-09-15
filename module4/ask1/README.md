@@ -250,7 +250,7 @@ eg <access modifier> eg public
 (parameters) eg (String[] args)
 
 public void myFullName (){
-    System.out.println("My name is Shakespear");
+    System.out.println("My name is Shakespeare");
 }
 
 public void myAge (){
@@ -267,7 +267,7 @@ public class Lesson10 {
     public static void main(String[] args) {
         //To access the properties of a class, we create an object of the class
 
-        Task10 methodVar = new Task10();
+        Lesson10 methodVar = new Lesson10();
         methodVar.printName();  // Invoke the method printName
         methodVar.myAge();     // Invoke the method printName
         int userAge = methodVar.ageCalculator(2000, 2023);
@@ -284,9 +284,60 @@ public class Lesson10 {
     }
     public int ageCalculator(int dob, int presentYear){
         int age = presentYear - dob ;
-        return age;
+        return age;  // we dont use 'void' for this clas since we have a return value
     }
 }
 
 - Methods with return values will make use of parameters to pass dynamic values and the keyword return. For such methods no return type of 'void' is not used 
 eg the ageCalculator method above
+
+## Lesson 11: Object Oriented Paradigm
+- OOP is a paradigmn that makes use of the concept of classes and methods that structure software programs into simple, re-useable blocks of codes (classes) which is used to create individual instances of objects.
+- The building blocks of OOP are COAM: classes, objects, attributes, methods
+- Object: Single instance of a class
+- 4 principles of OOP: Inheritance Encapsulation, Polymorphism, Abstraction
+Inheritance" Child class inherits data and information from parent class
+Encapsulation: Exposing only some information in the object
+Abstraction: Exposing high level public methods for accessing an objects
+Polymorphism: when many methods can do the same tasks, therefore allowing it take different forms
+
+## Lesson 12: Access Level Modifiers
+- Access level modifiers help restrict the scope of a class, constructor, variable, method or data member. They determine if other classes can use the fields or invoke a method
+- 4 types of access modifiers: public, protected, default(no keyword required), private
+- Public access modifiers have no restrictions
+- Protected access modifiers the methods and data members are only accessible on the package level or by the subclasses of another package when inherited
+- Default access modifier is when no access modifier is declared. The class,method, data member (just like protected access modifier)apply only within the same package
+- Private access modifier have the accessible only within the specified class
+- Classes are only available when the modifiers are either public or default
+https://prnt.sc/5iEaXpG6U-Fq
+
+## Lesson 13: Java Constructor
+- A constructor is a special method that is called when an object is instantiated (the 'new' keyword is used)
+- Structure of a constructure: public ClassName(parameter-list){
+    Statements
+}
+- Constructors are methods without return value eg 'Void'
+- We use the 'this' keyword when referencing a global variable that is of the same spelling as the parameter being passed in the constructor. Eg
+ public class Human {
+    
+    String firstName;  // global variable
+
+    public Human(String firstName){
+        this.firstName = firstName;    //firstName in GV is same as that passed in params
+    }
+
+}
+
+if the variable names were different, then no need for 'this' keyword. i.e
+public class Human {
+    
+    String fName;  // global variable
+
+
+public Human(String firstName){
+        fName = firstName;    
+    }
+
+## Lesson 14: Encapsulation
+- This is the process of wrapping data and code as a single unit and making them private such that no external class can access it without using a public method. We can use setters & getters to access those hidden data
+

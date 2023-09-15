@@ -14,9 +14,6 @@ public class Task10 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type in \"Testify\" if you are here for a testify training");
         String purpose = scanner.next();
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.println();
-
 
         if(!purpose.equalsIgnoreCase("Testify")){
         System.out.println("Sorry, you are not allowed to remain on this slack channel");
