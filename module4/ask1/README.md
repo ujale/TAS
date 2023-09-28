@@ -324,7 +324,7 @@ https://prnt.sc/5iEaXpG6U-Fq
 
     public Human(String firstName){
         this.firstName = firstName;    //firstName in GV is same as that passed in params
-    }
+    }                              //firstName of the left refers to the GV while                          //that on the right of the = refers to the class variable
 
 }
 
@@ -341,3 +341,83 @@ public Human(String firstName){
 ## Lesson 14: Encapsulation
 - This is the process of wrapping data and code as a single unit and making them private such that no external class can access it without using a public method. We can use setters & getters to access those hidden data
 
+## Lesson 15: Inheritance
+- The process by which 1 class acquires the properties and functionalities of another class. The child class uses the keyword 'extends' to implement inheritance.
+- Types of inheritance:
+Single inheritance (1-1 parent/child relationship),
+Multilevels inheritance(father extends to child1 which extends to child2 i.e father-son-grandson)
+Hierarchical inheritance: this is when more than 1 class extends the parent class
+Multiple inheritance: This is when 1 child class extends more than 1 parent class. THIS TYPE OF INHERITANCE IS NOT SUPPORTED IN JAVA
+
+## Lesson 16: Polymorphism
+- Method overloading: A feature that allows a class have the same name if their parameter list is different.
+Eg method add(int a, int b) and method add(int a, int b, int c)
+- Ways to overload:
+1. Number of parameters: add(int a, int b) and add(int a, int b, int c)
+2. Datatype: add(int a, int b) and add(int a, float b)
+3. Sequence of datatype of parameters: add(float a, int b) and add(int a, float b)
+- Method overridding: a feature that allows a subclass or child to implement the same method that is provided by one of his superclasses or parent classes. Here, a child class gives its own implementation to a method that is already provided by the parent class.
+The method of the child class is called the overriding method and the method of the parent class is called the overridden method
+
+## Lesson 16B: Abstract Class
+- A class declared using the 'abstract' keyword. The abstract class can have an abstract method (method without body) & concrete methods (regular methods with body)
+
+## Lesson 17A: Interface
+- Interfaces look like classes but are not. They have abstract methods (only method signature, no body). The class that implements interface must implement all methods of the interface. Java doesnt allow you extend more than 1 class, i.e have more than 1 parent, but you can implement many interfaces in Java.
+- 'implements' is the keyword used by classes that use interface.
+- Difference between abstract & interfaces https://prnt.sc/YPdsSVXiS-DV
+
+## Lesson 17B: Error Handling
+- An unwanted event that interrupts the program flow.
+- Types of exceptions:
+* Checked exception(checked at compile time eg IOException, SQLException)
+* Unchecked exceptions (checked at runtime eg ArithmeticException & NullPointerExceptions.)
+* Error (This means the system should crash instead of handling the error eg OutOfMemory, AssertionError, VirtulMachineError)
+- Terminologies in Java exceptions: Try(Used to specify where an exception code should be put. It is used with either catch or finally), Catch(this block is used to handle the excpetion, preceeded by a try block), Finally(used to execute the necessary program code), Throw(used to throw an excepton), Throws(used to declare an exception & is used by method body)
+- Hierarchy of exceptions https://prnt.sc/FlD56CniIdoQ
+
+## Lesson 19: Keywords in JAVA
+The final keyword is used for variables, methods and classes
+- when used as a variables, the value of the variable cannot be changed except in a static block or inside a constructor
+
+public static void main(String[] args) {
+        final int ballSize = 17;
+        ballSize = 23;    //flagged as we cannot reassign the value bcos of final keyword
+        System.out.println("The size of the ball in cm is " + ballSize);
+    }
+
+We need to use a constructor of static block to be able to change this value
+// A. With Constructor
+
+public class Task19 {
+    final int ballSize;
+    
+
+    public Task19(){       //constructors dont have body & is name of the class)
+        ballSize = 23;
+    }
+
+// B. With static class
+
+public class Task19 {
+    int ballSize;
+    
+
+    public static void main(String[] args) { // using final with static class
+        final int ballSize = 17;
+        System.out.println("The size of the ball in cm is " + ballSize);
+    }
+    
+}
+
+- When used as a method, the method cannot be overridden
+- When used as a class, the class cannot be extended
+
+### This Keyword: 
+Used when another variable within the current scope shares the same name and you want to use the instance member. Within a constructor, the this keyword can be used to call another constructor in the same class
+
+### Super Keyword
+Its used in subclasses to access the objects of the parent class
+
+### Static keyword 
+This is used for memory management. It can be used for variables, methods, nested classes, blocks. Static objects can be invoked without creating an object of the class
