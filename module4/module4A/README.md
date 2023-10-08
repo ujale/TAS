@@ -20,7 +20,7 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 # Notes
 ## Lesson 3
-Notes: 
+Notes:
 - type main+enter to generate the public static void main(String[] args{}
 - type sout+enter to generate System.out.println(newString);
 
