@@ -18,3 +18,32 @@ https://prnt.sc/QXxfmvXOJqaI
 
 ## Lesson3: DOM
 - Document object model
+
+## Lesson 4B: Locator strategy
+<a></a> anchor tags contain a link & have a text associated with it that can be fetch by Linkedtext or partial link text locator
+
+## Lesson 5: Xpath Selectors
+1. For basic xpath, use the syntax: //TagName[@AttributeName, "AttributeValue"]
+eg //input[@type='search']
+2. Contains
+eg //input[contains(@value, 'Lucky')]
+3. Starts with: This is used when the element value is dynamic everytime th page is loaded but the first few letters of the element remains the same while its end changes. Eg facebook first name input field
+//input[starts-with(@id, 'u_0_j')]
+4. XPATH Axes method: used to find complex or dynamic elements. It appears as parent-child and ancestor-descendant relationships.
+eg //Node1/child::*
+//Node1/parent::*
+//Node1/ancestor::*
+//Node1/descedant::*
+
+eg //div[@id='birthday_age']/descedant::div[2]
+
+## Lesson7: Get Details
+- Get Attribute: getAttribute("attr");
+- Get Text: getText();
+-Get Tag name: getTagName();
+Get CSS value: getCssValue();
+
+## Lesson 8: Element State
+- is Enabled()
+- isDisplayed()
+- isSelected()
