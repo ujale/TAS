@@ -47,3 +47,17 @@ Get CSS value: getCssValue();
 - is Enabled()
 - isDisplayed()
 - isSelected()
+
+## Lesson 10: iframes
+- Elements inside an iframe cannot be accessed directly. You need to switch to iframe to access it by using its name, id or index.
+
+## Lesson 11: Alert & browser pop up
+For Alerts: https://prnt.sc/ydc2kMhjdmi6
+- Void dismiss(): used when the cancel button is clicked in the alert box
+- Void accept(): used to click on the 'OK' button of the alert
+- String getText(): used to capture alert message
+- Void sendKeys(String stringToSend): used to send data to the alert box
+
+For Pop-ups
+- Driver.getWindowHandles(); // This is used when switching between windows on a browser. i.e multiple browser windows are open
+- Driver.getWindowHandle();

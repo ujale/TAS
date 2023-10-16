@@ -16,5 +16,6 @@ public class Task6 {
         driver.findElement(By.cssSelector("#add-to-cart-sauce-labs-backpack")).click();
         driver.findElement(By.cssSelector("#shopping_cart_container > a")).click();
         driver.findElement(By.cssSelector("#checkout")).click();
+        
     }
 }

@@ -17,11 +17,10 @@ public class Task7 {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://worldweather.wmo.int/en/home.html");
         driver.manage().window().maximize();
-        driver.findElement(By.cssSelector("#q_search")).sendKeys("Lagos");
+        WebElement searchIcon = driver.findElement(By.cssSelector("#q_search"));
+        searchIcon.sendKeys("Lagos, Nigeria");
+        searchIcon.sendKeys(Keys.RETURN);
         driver.wait(3000);
-        //WebElement searchIcon = driver.findElement(By.cssSelector("#q_search"));
-        //WebElement searchIcon = driver.findElement(By.xpath("//body/div[1]/div[5]/div[1]/div[2]/div[1]/form[1]/input[3]"));
-        //searchIcon.sendKeys(Keys.RETURN);
-        driver.findElement(By.xpath("//body/div[1]/div[5]/div[1]/div[2]/div[1]/form[1]/input[3]")).click();
+        driver.findElement(By.cssSelector(".top_searchbox_submit")).click();
     }
 }
