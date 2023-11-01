@@ -14,4 +14,4 @@ public class GoogleNavigate {
         driver.findElement(By.id("input")).sendKeys("Baseball");
 
     }
-}    
+}

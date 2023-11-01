@@ -5,8 +5,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.Test;
 
 public class TestifySafari {
+    @Test
     public static void main(String[] args) {
         WebDriver driver = new SafariDriver();
 
@@ -17,6 +19,6 @@ public class TestifySafari {
         inputTestify.sendKeys("testify ltd");
         inputTestify.sendKeys(Keys.RETURN);
         //driver.navigate().refresh();
-        //driver.close();
+        driver.quit();
     }
 }

@@ -24,10 +24,11 @@ public class Task11 {
         WebElement inputTestify = driver.findElement(By.cssSelector("#APjFqb"));
         inputTestify.sendKeys("testify ltd");
         inputTestify.sendKeys(Keys.RETURN);
+        driver.findElement(By.xpath("/html/body/div[5]/div/div[10]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/cite")).click();
         
         JavascriptExecutor scrolling = (JavascriptExecutor) driver;
-        scrolling.executeScript("window.scrollBy(0, 500)");
-        String text = driver.findElement(By.cssSelector("body.srp:nth-child(2) div.main:nth-child(11) div.e9EfHf div.GyAeWb:nth-child(14) div.s6JM6d div.eqAnXb:nth-child(3) div.v7W49e div.MjjYud:nth-child(3) div.g.Ww4FFb.vt6azd.tF2Cxc.asEBEc div.N54PNb.BToiNc.cvP2Ce div.kb0PBd.cvP2Ce.jGGQ5e:nth-child(1) div.yuRUbf a:nth-child(1) div.notranslate.TbwUpd.NJjxre.iUh30.ojE3Fb:nth-child(3) span.H9lube:nth-child(1) div.eqA2re.NjwKYd.Vwoesf > img.XNo5Ab")).getText();
+        scrolling.executeScript("window.scrollBy(500, 50)");
+        String text = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/section[1]/div/div[1]/div[1]/p")).getText();
         System.out.println(text);
         
     }

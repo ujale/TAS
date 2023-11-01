@@ -49,7 +49,9 @@ Get CSS value: getCssValue();
 - isSelected()
 
 ## Lesson 10: iframes
-- Elements inside an iframe cannot be accessed directly. You need to switch to iframe to access it by using its name, id or index.
+- Elements inside an iframe cannot be accessed directly. You need to switch to iframe to access it by using its name, id or index. 
+- When inspected, elements with iframes reflect with an iframe flag on Chropath. The iframe element can be directly inspected by going to the html tag and then type iframe in the search box of chropath. This will show the number of iframes present on that webpage and you can search for he specific element of the iframe you want to drag.
+- If the number of iframes present is 1, the index will be 0 and so on.
 
 ## Lesson 11: Alert & browser pop up
 For Alerts: https://prnt.sc/ydc2kMhjdmi6
@@ -61,3 +63,52 @@ For Alerts: https://prnt.sc/ydc2kMhjdmi6
 For Pop-ups
 - Driver.getWindowHandles(); // This is used when switching between windows on a browser. i.e multiple browser windows are open
 - Driver.getWindowHandle();
+
+## Lesson 13 Select class
+- this is used for HTML select tags
+EG selectByVisibleText
+selectByIndex
+selectByValue
+deselectAll()
+
+## Lesson 14 Test Synchronization
+- 2 types of sync: 
+1. unconditional: indicates timeout value & run continues after the period elapses. eg Thread.sleep()
+2. conditional: you can specify timeout values & desired conditions eg  implicit & explicit wait
+- implicit wait: wait until after a specified time before you throw an exception error
+- Explicit wait: wait until specifi conditions are met or max time has elapsed
+
+## Lesson 15: testNG assert
+- developed within the lines of JUnit and NUnit
+- TestNG covers all forms of tests: unit, functional, end to end, integration etc
+- it requires JDK 5 and above
+- Provides HTML report, supports parallel testing, helps in grouping//prioritization of tests, generate logs, contains annotations
+
+How to Add testNG dependency?
+- Navigate to the maven repository: https://mvnrepository.com/artifact/org.testng/testng 
+https://prnt.sc/EEH7C-_D4cY9
+https://prnt.sc/C__M32fQBO13
+- Copy the testNG dependency and paste it in your project's POM XML
+- Rebuild your project to import the necessary files: This is done by reloadng maven
+
+## Lesson 16: testNg assert
+2 types of assert: Hard assert and soft assert
+- Hard assert: throws an AssetException immediately the assertion fails and the test suite continues with the next @Test
+- Soft assert: collects the error in that @Test without throwing an exception error when an assertion fails. We need to create a method to use soft delete.
+- If there is any exception and you want to throw it during a soft assert, use assertAll() as the last statement in the @Test
+
+## Lesson 17: Running Test Suite
+- TestNG.xml is a configuration file used in organizaing our tests and allows creation & handling of multiple test classes, define test suite, tests.
+Steps:
+1. Create a testng.xml file in your project folder with whatever name of choice but with the suffix .xml eg TestNg.xml
+2. Paste this in the file
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="">
+    <test name="">
+        <classes>
+            <class name=""/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
+3. Give a name of choice for the test suite name, test name, while you add the names of the class(es) to be run. The class naming convention is packagename.classname
