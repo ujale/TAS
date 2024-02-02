@@ -12,6 +12,7 @@ def main():
         "platformVersion": "12",
         "app": "/Users/udemejalekun/Downloads/Calculator_8.4 (503542421)_Apkpure.apk",
         "appPackage": "com.google.android.calculator",
+        "appActivity": ".activities.MusicActivity",
         "noSign": True
     }
     driver = webdriver.Remote(command_executor="http://127.0.0.1:4723/wd/hub", desired_capabilities=desired_caps)

@@ -49,11 +49,33 @@ Setup Android SDK:
 This is a better option of using android tools as it saves a lot of resources (eg RAM) and 
 beats against having multiple apps open i.e android studio & emulator
 1. Open your environment variable (search with environment variables on window) ()
+--------------------------------------------------------------------
+
+For mac users following these steps to add to environment variables:
+Sure, to add an environment variable in macOS, you can follow these steps:
+1. **Open Terminal:** You can find Terminal in the "Applications" folder under "Utilities," or you can use Spotlight (Command + Space, then type "Terminal") to open it.
+
+2. **Identify the Shell:** Determine which shell you're using. By default, macOS uses the Bash shell. To check, you can type `echo $SHELL` in the Terminal and press Enter.
+
+3. **Choose a Shell Configuration File:** Depending on the shell, you'll need to edit the respective shell configuration file. Commonly used configuration files are `.bash_profile` for Bash or `.zshrc` for Zsh if you're using macOS Catalina or later, which uses the Zsh shell by default. If these files don't exist, you might need to create them.
+
+4. **Open the Configuration File:** Use a text editor to open the configuration file. You can do this using the Terminal. For example, if you're using Bash, you can type `nano ~/.bash_profile` and press Enter. If you're using Zsh, it might be `nano ~/.zshrc`. If the file doesn’t exist, it will create a new one.
+
+5. **Add the Environment Variable:** In the opened file, you can add your environment variable in the format `export VARIABLE_NAME="variable_value"`. For instance, if you want to add a variable named `MY_VARIABLE` with a value of `example`, you'd add `export MY_VARIABLE="example"`.
+
+6. **Save and Close the File:** After adding the environment variable, save the changes in the file. In Nano, you can press `Ctrl + X` to exit, it will prompt you to save the changes, press `Y` for Yes, and then press Enter.
+
+7. **Apply the Changes:** To make the changes effective without restarting your system, you can run the command `source ~/.bash_profile` or `source ~/.zshrc` based on the file you've edited.
+
+8. **Verify:** To verify that the environment variable has been added successfully, you can use the `echo` command followed by the variable name. For instance, `echo $MY_VARIABLE`.
+
+After following these steps, the environment variable should be set and accessible within your terminal session on your macOS.
+------------------------------------------------------------------------------------
 2. Verify ANDROID_HOME is added to system variable. If not, add it
 3. Add the Android emulator to the system path
 4. Add the android platform tool to the system path
 
-To run the emulator from terminal:
+To run the emulator from terminal (computer terminal or other IDE terminals eg VS code, pycharm etc):
 1. use the command <emulator -list-avds> to get the list of AVDs you have created on android studio
 2. Then use the command <emulator -avd name-of-the-AVD> eg emulator -avd Pixel_4_API_31
 
@@ -76,7 +98,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 # Lesson 7: Run your first mobile automation using an existing app
-Desire capabilities are key-value pairs encoded in jsom object that is sent by appium client to the server during a new automation session
+Desire capabilities are key-value pairs encoded in json object that is sent by appium client to the server during a new automation session
 
 {
     "platformName": "App"
