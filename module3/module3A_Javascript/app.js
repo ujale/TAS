@@ -94,6 +94,10 @@ Composite datatypes: arrays, functions, objects
 // console.log(output)
 
 // //Lesson 14: Primitive datatypes- Boolean, null, undefined
+/* Null = absence of value
+Undefined = trying to assess a variable name that does not have a value assigned to it
+*/
+
 // const isBritish = false
 // const userDetails = null
 // let country
