@@ -63,6 +63,11 @@ Computer program file ---> Interpreter ---> Program execution
 // console.log(favoriteColor)
 
 // //Lesson 12: Data Types
+/* 2 data types: Primitive and Composite
+Primitive datatypes: Strings, numbers, boolean, null, undefined
+Composite datatypes: arrays, functions, objects
+*/
+
 // const score = 49.6
 
 // console.log(typeof(score))
