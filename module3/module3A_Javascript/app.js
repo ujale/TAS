@@ -1,4 +1,31 @@
+// Lesson 5: Compilers vs Interpreters
+/* - Computers doesnt understand english but 0s & 1s
+- Compilers: Converts english-based text to binary numbers (0 & 1) into a binary file which is what the program executes.
+- Languages that need compilation include C, C#, C++, Pascal etc. You need to install their compilers in other to write/run their code.
+
+Computer program file ---> Compiler --->Binary code ---> Program execution
+
+- Interpreters do not require any conversions, the program file is read and interpreted as binaries which are read directly by the computer.
+eg PHP, Python, Perl, Ruby require interpreters installed to run them
+
+Computer program file ---> Interpreter ---> Program execution 
+*/
+
+// Lesson 6: Intro to JS
+/* - Statically typed PL require the variable type to be declared at compilie time eg Java while dynamically typed PL require data type declared at run time eg JS & Python
+- JS is present everywhere in diff flavors: Browsers, Serverside apps (NodeJS), DB (MongoDB), Desktop (Electron), Mobile app (React Native) */
+
+/*  // Lesson 7: Environment setup
+ - Install VS code, google browser
+- Add extensions for emmet live, live server to vscode */
+
 // //Lesson 8
+/* - create an index.html file and a app.js file.
+- in the index.html file, type ! then enter and through the help of emmet live, an html boilerplate code is created in the index.html file
+- add your title header (if applicable) within the header tags <h2> </h2> 
+- We can write our js code directly on the index.html file within <script></script>. This is not best practice. Instead we use the app.js as our js code file.
+*/
+
 // alert("Hello World!")
 
 
