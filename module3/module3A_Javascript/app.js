@@ -278,6 +278,17 @@ Undefined = trying to assess a variable name that does not have a value assigned
 
 // MyFunction(); //Function call
 
+/* The syntax of a function is:
+functionkeyword functionname(input){
+    block of code
+}
+
+functionname(argument);
+*/
+
+// A function that has parameter inputs will have arguments passed when it is being called
+// Input parameters and arguments are optional. They can be a single parameter/argument or multiple
+
 // function greetings(name){
 //     console.log("Good morning, " + name)
 // }
@@ -369,12 +380,18 @@ Undefined = trying to assess a variable name that does not have a value assigned
 
 // //Lesson 26: Function Expression
 // //Functions can be declared (accessed anywhere in code due to hoisting) or expressed (accessed only after being initialised)
+/* The major difference between function declaration and function expression is that the whole function is assigned to a variable 
+thus instead of calling the function, you call the variable i.e variable(input param). 
+second thing to note is that since function expressions have the function assigned to a variable, there is no need to pass a 
+function name in the function syntax. Removing the function name makes the function an anonymous function.
+*/
+
 // function greet(name){  //declared function
 //     console.log('Hello ' + name)
 // }
 // greet("Nick");
 
-// const myGreet = function (name){  //expressed function
+// const myGreet = function (name){  //expressed function (Anonymous function- it does not need to have the function name 'greet' anymore)
 //     console.log('Hello ' + name)
 // }
 // myGreet("Ned")
