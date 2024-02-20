@@ -639,6 +639,19 @@ function name in the function syntax. Removing the function name makes the funct
 // console.log(person)
 
 //Task 14
+/*
+Create a books array. 
+Each element of this array will be a book object. 
+Each book object will have the following properties:
+
+title (string)
+description (string)
+numberOfPages (number)
+authour (string)
+reading (boolean)
+3. Use a for-loop to loop through the books array and log all books where the reading status is true to the console
+*/
+
 // const books = [
 //         {
 //             title: 'Peter Pan',
