@@ -121,6 +121,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 Step 4: start writing your code either directly into the py file or within a function
 Step 5: declare the desired capabilities in the main function
+To get the device name, on your emulator go to Settings > Search for 'About Emulated device' > you will see device name https://prnt.sc/_Cm3EwShCf3I
 Step 6: Start your appium server (appium GUI) and ensure its the port on the appium server that is set as 
 command executor path
 
@@ -158,12 +159,15 @@ Step 7: Run the python file. The appium server is installed on the emulator and 
 
 # Lesson 8: Running your first application on System or Server
 The above steps show how to run apps from the system. To run from server the following changes is done:
-1. A server is created at the folder location where the downloaded app is by opening a 
+1. Download the calculator app from https://apkpure.com/calculator/com.google.android.calculator/downloading
+2. A server is created at the folder location where the downloaded app is by opening a 
 terminal in that folder location and using the command <python -m http.server <port of choice>>
 eg python -m http.server 9009 https://monosnap.com/file/OU8G2xZzhaRxJ9PrmjkO4CpNvrLoUt
-2. Ensure appium server is runner
-3. Uninstall the app if its installed so as to allow you reinstall it using the server option.
-4. You can confirm the server is correct by typing it directly in a browser https://monosnap.com/file/bC42YNTJcmWZUhlbZAuf6V0XkeKhad
+Note: You can confirm the server has started by typing http://127.0.0.1:9009/ in a browser and this will display the contents of the directory. Look for the calculator in the directory and copy the path which you should paste as the app value https://prnt.sc/GjoiSy5eAXBf
+N.B: 127.0.0.1 is the same as local host
+3. Ensure appium server is runner
+4. Uninstall the app if its installed so as to allow you reinstall it using the server option.
+5. You can confirm the server is correct by typing it directly in a browser https://monosnap.com/file/bC42YNTJcmWZUhlbZAuf6V0XkeKhad
 
 # Lesson 9: Getting android app variables
 ADB = Android debug bridge is a programming tool used to debug android-based devices. 
@@ -184,3 +188,5 @@ Alternatively run <adb shell dumpsys package | grep -i"<package name>" | grep Ac
 
 Android LOGCAT is a utility that dumbs up the android device logs so that errors and other messages can be seen  
 Use the command <adb logcat> to view system logs
+
+To get the list of app activities use the command <dumpsys package | grep -i 'com.android.calendar' | grep 'Activity'>
